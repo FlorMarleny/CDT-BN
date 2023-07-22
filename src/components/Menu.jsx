@@ -6,7 +6,7 @@ const Menu = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/home">
+        <a className="navbar-brand" href="/">
           <img
             src={CDTLogo}
             alt="Logo"
@@ -29,7 +29,7 @@ const Menu = () => {
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/cdt">
+              <a className="nav-link" href="/">
                 CDT
               </a>
             </li>

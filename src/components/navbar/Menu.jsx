@@ -10,6 +10,7 @@ const Menu = () => {
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img
+          className='logo'
             src={CDTLogo}
             alt="Logo"
             style={{ maxWidth: "100px", maxHeight: "50px" }}

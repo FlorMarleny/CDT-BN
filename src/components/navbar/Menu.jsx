@@ -1,18 +1,20 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
-import CDTLogo from "../assets/CDTLogo.png";
+import CDTLogo from "../../img/CDTLogo.png";
+import './Menu.css'; // Import the CSS file if you have any styles specific to the navbar
 
 const Menu = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           <img
             src={CDTLogo}
             alt="Logo"
             style={{ maxWidth: "100px", maxHeight: "50px" }}
           />
-        </a>
+        </Link>
 
         <button
           className="navbar-toggler"
@@ -29,34 +31,35 @@ const Menu = () => {
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/">
                 Inicio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/empresas">
+              <Link className="nav-link" to="/nosotros">
                 Nosotros
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/cursos">
+              <Link className="nav-link" to="/cursosyprogramas">
                 Cursos y Programas
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/academico">
+              <Link className="nav-link" to="/contacto">
                 Contacto
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/preguntas">
+              <Link className="nav-link" to="/academico">
                 Académico
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
   );
 };
 

@@ -2,8 +2,102 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem;
+}
+/* Estilos para el contenedor del encabezado */
+.header-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 250px; 
+  padding: 10px;
+}
+
+/* Estilos para el oscurecimiento de la imagen */
+.header-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(50%); /* Oscurecer la imagen */
+  border-radius: 10px; /* Redondear las esquinas de la imagen */
+}
+
+/* Estilos para el texto sobre la imagen */
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Ajuste para el buscador */
+.input-group {
+  margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor del carrusel de opiniones */
+.slick-slider {
+  margin: 0 auto;
+}
+
+/* Estilos para los puntos de navegación del carrusel */
+.slick-dots {
+  bottom: -40px;
+}
+
+/* Estilos para ocultar los puntos de navegación (dots) del carrusel */
+
+
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+/* Estilos para cada diapositiva (testimonial-slide) del carrusel */
+.testimonial {
+  margin: 0 10px 20px; /* Agregar margen inferior de 20px */
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ... (otros estilos se mantienen igual) */
+
+
+.testimonial-img {
+  height: 100px;
+}
+
+.testimonial-rating {
+  font-size: 24px;
+  color: #ffc107;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  color: #6c757d;
+}
+
+.testimonial-text {
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 576px) {
   .navbar-nav li:not(:first-child) .nav-link::before {

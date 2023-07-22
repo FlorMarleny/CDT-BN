@@ -30,27 +30,27 @@ const Menu = () => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link" href="/">
-                CDT
+                Inicio
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/empresas">
-                Empresas
+                Nosotros
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/cursos">
-                Cursos
+                Cursos y Programas
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/academico">
-                Académico
+                Contacto
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/preguntas">
-                Preguntas Frecuentes
+                Académico
               </a>
             </li>
           </ul>

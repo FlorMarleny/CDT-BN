@@ -1,8 +1,20 @@
+:root
+{
+    --azul : #00233F;
+    --black : #000000;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(17, 131, 7, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
 #root {
   max-width: 100%;
   margin: 0 auto;
   padding: 0rem;
 }
+
 /* Estilos para el contenedor del encabezado */
 .header-container {
   position: relative;

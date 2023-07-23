@@ -26,7 +26,7 @@ const Menu = () => {
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light ">
+    <nav className="navbar navbar-expand-lg navbar-light mb-4">
     <div className="container-fluid">
       <Link className="navbar-brand" to="/">
         <img

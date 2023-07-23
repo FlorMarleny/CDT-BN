@@ -10,18 +10,15 @@ import './Slider.css';
 const Slider = () => {
   return (
     <div className="slider-wrapper">
-      <Carousel infiniteLoop autoPlay interval={3000} showArrows={true}>
+      <Carousel infiniteLoop autoPlay interval={3000} showArrows={true} showThumbs={false}>
         <div>
           <img src={foto1 } alt="Imagen 1" />
-          {/* <p className="legend">Imagen 1</p> */}
         </div>
         <div>
           <img src={foto2 } alt="Imagen 2" />
-          {/* <p className="legend">Imagen 2</p> */}
         </div>
         <div>
           <img src={foto3 } alt="Imagen 3" />
-          {/* <p className="legend">Imagen 3</p> */}
         </div>
       </Carousel>
     </div>

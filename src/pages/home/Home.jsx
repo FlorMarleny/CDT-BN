@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../App.css";
 import "./Home.css"
+import Menu from "../../components/Navbar/Menu";
 import imagenPO from "../../img/img1.jpeg";
 import imagenP from "../../img/img2.jpeg";
 import portada from "../../img/img3.jpeg";
@@ -72,10 +73,11 @@ const Home = () => {
 
   return (
     <div className="container">
+      <Menu />
       <Helmet>
         <title>Inicio</title>
       </Helmet>
-      <div className="row mb-5 mt-5 ">
+      <div className="row mb-5">
         <div className="col-md-6">
           <h1 className="display-1 fw-bold title">
             Siempre apostando por una <span className='resaltar'>educación</span>  con <span className='resaltar'>calidad</span>

@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Menu from "./components/Navbar/Menu";
 import Home from "./pages/home/Home";
 import Nosotros from "./pages/nosotros/Nosotros";
 import CursosyProgramas  from "./pages/cursosyprogramas/CursosyProgramas";
@@ -11,9 +10,6 @@ import NotFoundPage from './pages/404/NotFoundPage';
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <Menu />
-      </div>
       <div>
         <Routes>
           <Route path="/" element={<Home />} />

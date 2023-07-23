@@ -10,6 +10,7 @@ const Nosotros = () => {
         <title>Nosotros</title>
       </Helmet>
       <Slider />
+      
     </div>
   )
 }

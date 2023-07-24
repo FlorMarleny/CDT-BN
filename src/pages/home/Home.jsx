@@ -1,5 +1,5 @@
-import React from 'react'
-import { Helmet } from 'react-helmet';
+import React from "react";
+import { Helmet } from "react-helmet";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,9 +11,12 @@ import imagenP from "../../img/img2.jpeg";
 import portada from "../../img/img3.jpeg";
 import imagenCursos from "../../img/img4.jpeg";
 
+import collage1 from "../../img/collage1.jpg"
+import collage2 from "../../img/collage2.jpg"
+import collage3 from "../../img/collage3.jpg"
+import collage4 from "../../img/collage4.jpg"
 
 const Home = () => {
-
   const testimonials = [
     {
       id: 1,
@@ -63,12 +66,11 @@ const Home = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Mostrar tres opiniones por columna
+    slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true, // Habilitar el autoplay para que el carrusel se mueva automáticamente
-    autoplaySpeed: 3000, // Establecer el intervalo de tiempo entre transiciones (3 segundos en este caso)
+    autoplay: true, 
+    autoplaySpeed: 3000, 
   };
-
 
   return (
     <div className="container">
@@ -125,10 +127,9 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Nueva fila para las imágenes */}
+      {/* imágenes */}
       <div className="row mb-5">
         <div className="col-md-4">
-
           <div className="header-container h-100 ">
             <img
               src={imagenP}
@@ -137,7 +138,6 @@ const Home = () => {
             />
             <div className="header-text">PROGRAMAS DE PERFIL</div>
           </div>
-
         </div>
 
         <div className="col-md-4">
@@ -163,13 +163,15 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Nueva fila para el carrusel de opiniones */}
-      <div className="row">
+      {/* carrusel de opiniones */}
+      <div className="row testimonial-container">
         <div className="col">
-          <h2>Testimonios</h2>
           <Slider {...settings}>
             {testimonials.map((testimonio) => (
-              <div key={testimonio.id} className="testimonial card border-secondary">
+              <div
+                key={testimonio.id}
+                className="testimonial card border-secondary"
+              >
                 <div className="testimonial-img card-img-top d-flex justify-content-center align-items-center">
                   <img
                     src={testimonio.imagen}
@@ -178,13 +180,17 @@ const Home = () => {
                   />
                 </div>
                 <div className="testimonial-rating card-body text-center">
-                  {Array.from({ length: testimonio.calificacion }).map((_, index) => (
-                    <span key={index}>&#9733;</span>
-                  ))}
+                  {Array.from({ length: testimonio.calificacion }).map(
+                    (_, index) => (
+                      <span key={index}>&#9733;</span>
+                    )
+                  )}
                 </div>
                 <div className="testimonial-text card-footer">
-                  <p className="testimonial-quote">-{testimonio.testimonial}"</p>
-                  <p className="fw-bold">- {testimonio.nombre}</p>
+                  <p className="testimonial-quote">
+                    "{testimonio.testimonial}"
+                  </p>
+                  <p className="fw-bold">{testimonio.nombre}</p>
                 </div>
               </div>
             ))}
@@ -192,8 +198,33 @@ const Home = () => {
         </div>
       </div>
 
-    </div>
-  )
-}
+      {/* COLLAGE */}
+      <div className="row">
+        <div className="col-md-6">
+          <img src={collage1} alt="Imagen 1" className="img-fluid h-100 w-100 " />
+        </div>
 
-export default Home
+        <div className="col-md-6">
+
+          <div className="row  ">
+            <div className="col-md-12">
+              <img src={collage2} alt="Imagen 2" className="img-fluid w-100 mb-3" />
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-md-6">
+              <img src={collage3} alt="Imagen 3" className="img-fluid w-100" />
+            </div>
+            <div className="col-md-6">
+              <img src={collage4} alt="Imagen 4" className="img-fluid w-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  );
+};
+
+export default Home;

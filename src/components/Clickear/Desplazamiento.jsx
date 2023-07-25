@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
-<<<<<<< HEAD
 import "./Desplazamiento.css";
 // import "../Clickear/Desplazamiento.css"
-=======
+
 
 import "./Desplazamiento.css";
 
->>>>>>> c643812267fb0612635d92124c42c30d8449544c
 const Desplazamiento = () => {
   const [isScrollVisible, setIsScrollVisible] = useState(false);
 

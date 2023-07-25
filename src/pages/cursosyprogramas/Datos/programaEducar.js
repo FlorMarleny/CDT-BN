@@ -4,10 +4,10 @@ export const programaEducar = {
     subprogramas: [
       {
         id: 1,
-        nombre: "Subprograma 3-1",
-        imagen: "src/img/subprograma3-1.jpg",
-        texto: "Texto del subprograma 3-1",
-        modalidad: "Virtual",
+        nombre: "Programa Educar",
+        imagen: "src/img/imagenCursos.jpg",
+        texto: "Fortalecer competencias digitales docentes con TIC y estrategias didácticas para motivar participación activa estudiantil.",
+        modalidad: "Síncrona",
         gratis: true,
       },
     ],

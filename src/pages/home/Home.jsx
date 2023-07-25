@@ -113,7 +113,7 @@ const Home = () => {
     nextArrow: <NextArrow />,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 992, 
         settings: {
           slidesToShow: 1,
         },
@@ -223,7 +223,7 @@ const Home = () => {
         <Row className="my-4">
           <Col sm={12} className="mx-auto">
             <div style={{ maxWidth: "auto", margin: "0 auto" }}>
-              <Slider {...settings} className="testimonial-slider">
+              <Slider {...settings} className="testimonial-slider ">
                 {opiniones.map((testimonial) => (
                   <div key={testimonial.id}>
                     <Testimonial {...testimonial} />

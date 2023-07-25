@@ -4,7 +4,7 @@ import foto1 from '../../img/cdt-sechura.jpg'
 
 const Historia = () => {
     return (
-        <section style={{ padding: '1rem' }}>
+        <section className='mt-4' style={{ padding: '1rem' }}>
             <h2>CENTROS DE DIFUSIÓN DE <span>TECNOLOGÍA</span></h2>
             <div className='d-grid bg-gris'>
                 <div style={{ marginBottom: '0rem' }}>

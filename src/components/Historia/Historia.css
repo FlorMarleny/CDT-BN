@@ -1,14 +1,4 @@
 /* General Styles */
-
-  
-  h2 {
-    margin-top: 2rem; /* Slightly reduce the top margin */
-    font-family: "Open Sans", sans-serif;
-    color: var(--azul);
-    font-weight: bold;
-    font-size: 22px; /* Slightly increase the font size */
-  }
-  
   p {
     font-family: "Lato", sans-serif;
     font-style: normal;

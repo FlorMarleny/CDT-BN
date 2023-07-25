@@ -13,6 +13,18 @@
   color: #888;
 }
 
+h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #484848;
+  font-weight: bold;
+  font-size: 22px; /* Slightly increase the font size */
+  text-shadow: 1px 1px #e0e0e0;
+}
+
+h2 > span {
+  color: #484848; /* Black color for the span text */
+ /* text-shadow: 1px 2px 1px yellow;  Propiedad para agregar sombra amarilla */
+}
 
 
 

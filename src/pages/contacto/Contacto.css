@@ -1,0 +1,99 @@
+.d-grid-maps {
+    width: 66.6%;
+    display: grid;
+    gap: 3rem;
+
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+/* Cambiar el color del texto del tooltip a blanco */
+.leaflet-tooltip {
+    color: #ad1a24;
+    font-weight: 700;
+}
+
+/* Agregar una sombra gris al tooltip */
+.leaflet-tooltip {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.rounded-icon {
+   
+    /* Altura del ícono */
+    border: 2px solid #007bff;
+    /* Borde azul */
+    border-radius: 50%;
+    /* Hacer el borde circular */
+    padding: 8px;
+    /* Agregar un poco de espacio alrededor del ícono */
+}
+
+/* Estilos para el contenedor de íconos */
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Estilos para los íconos de Font Awesome */
+  .icon {
+    color: #007bff; /* Color del ícono */
+    font-size: 20px; /* Tamaño del ícono */
+  }
+
+
+/* Estilos para el texto al lado de los iconos */
+.icon-text {
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 20px;
+    /* Espacio entre el ícono y el texto */
+    font-size: 16px;
+    color: #666666;
+    /* Color del texto (azul) */
+}
+
+
+.formulario {
+    width: 33.4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.div {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

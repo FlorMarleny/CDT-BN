@@ -5,8 +5,8 @@ import 'leaflet/dist/leaflet.css';
 const Sechura = () => {
   useEffect(() => {
     // Crear el mapa y definir la ubicación central
-    const map = L.map('sechura-map', {
-      center: [-5.556353261691145, -80.82329696016133],
+    const map = L.map('tembladera-map', {
+      center: [-7.255207, -79.132425],
       zoom: 16.5,
       scrollWheelZoom: false, // Desactivar el zoom con la rueda del mouse
     });
@@ -21,11 +21,11 @@ const Sechura = () => {
     });
 
     // Crear el marcador en la ubicación central con el ícono personalizado
-    const marker = L.marker([-5.556353261691145, -80.82329696016133], { icon: customIcon }).addTo(map);
+    const marker = L.marker([-7.255207, -79.132425], { icon: customIcon }).addTo(map);
 
     // Configurar un texto (tooltip) para el marcador
     marker
-      .bindTooltip('CDT - Sechura', {
+      .bindTooltip('CDT - Tembladera', {
         permanent: true, // Mostrar el tooltip de forma permanente
         direction: 'top', // Dirección del tooltip (arriba)
         className: 'custom-tooltip', // Agregar una clase CSS personalizada al tooltip
@@ -38,7 +38,7 @@ const Sechura = () => {
     };
   }, []);
 
-  return <div id="sechura-map" style={{ height: '200px' }}></div>;
+  return <div id="tembladera-map" style={{ height: '200px' }}></div>;
 };
 
 export default Sechura;

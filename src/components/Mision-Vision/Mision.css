@@ -3,14 +3,6 @@
 /* Mission Heading Styles */
 .mission-heading {
     text-align: center;
-    color: #00233F; /* Blue color for the text */
-    position: relative;
-  }
-  
-  .mission-heading span {
-    color: #000; /* Black color for the span text */
-    margin-top: 5px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Add a subtle text shadow */
   }
   
   /* Animations */

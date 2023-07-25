@@ -10,7 +10,7 @@ import NotFoundPage from './pages/404/NotFoundPage';
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className='container'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/nosotros" element={<Nosotros />} />

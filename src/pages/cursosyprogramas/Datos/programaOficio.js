@@ -25,7 +25,8 @@ export const programaOficio = {
       nombre: "Fabricación de Estructuras Metálicas",
       imagen: "src/img/imagenCursos.jpg",
       texto:
-"Curso de soldadura: potenciar competencias en fabricación y mantenimiento de estructuras metálicas con enfoque práctico y teórico.",      modalidad: "Presencial",
+        "Curso de soldadura: potenciar competencias en fabricación y mantenimiento de estructuras metálicas con enfoque práctico y teórico.",
+      modalidad: "Presencial",
       gratis: true,
     },
   ],

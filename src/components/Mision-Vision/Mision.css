@@ -2,35 +2,19 @@
 
 /* Mission Heading Styles */
 .mission-heading {
-    font-size: 32px;
-    font-weight: bold;
     text-align: center;
     color: #00233F; /* Blue color for the text */
     position: relative;
   }
   
-  .mission-heading:before {
-    content: "MIS";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 36px;
-    font-weight: bold;
-    color: #FEBD13; /* Bright yellow color for the pseudo-element text */
-  }
-  
   .mission-heading span {
-    font-size: 24px;
-    font-weight: bold;
     color: #000; /* Black color for the span text */
-    display: block;
     margin-top: 5px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Add a subtle text shadow */
   }
   
   /* Animations */
-  .mission-heading:before {
+  .mission-heading {
     animation: pulse 2s infinite alternate;
   }
   
@@ -42,31 +26,7 @@
       transform: scale(1.1);
     }
   }
-/* Container Styles */
-section {
-    padding: 2rem;
-    max-width: 1200px;
-    /* Set a maximum width for the section */
-    margin: 0 auto;
-    /* Center the section on the page */
-}
 
-.d-grid {
-    display: grid;
-    /* Use CSS Grid for better responsiveness */
-    gap: 5rem;
-    /* Reduce the gap between grid items */
-    grid-template-columns: 1fr 1fr;
-    /* Two columns layout for desktop */
-}
-
-.imagenHistoria {
-    max-width: 100%;
-    height: auto;
-    background-size: cover;
-    object-fit: cover;
-    /* Use object-fit for image sizing */
-}
 
 /* Add media query for smaller screens (e.g., tablets and mobiles) */
 @media (max-width: 768px) {
@@ -78,9 +38,5 @@ section {
         grid-template-columns: 1fr;
         /* Change to a single column layout for mobile */
         gap: 0rem;
-    }
-
-    .imagenHistoria {
-        margin-top: 0rem;
     }
 }

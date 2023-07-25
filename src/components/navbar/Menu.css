@@ -1,5 +1,6 @@
 .logo {
     background-size: cover;
+    object-fit: cover;
 }
 .active-link {
     font-weight: bold;

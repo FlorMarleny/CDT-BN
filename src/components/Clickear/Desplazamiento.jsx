@@ -4,6 +4,7 @@ import { animateScroll as scroll } from "react-scroll";
 import "./Desplazamiento.css";
 // import "../Clickear/Desplazamiento.css"
 
+
 import "./Desplazamiento.css";
 
 const Desplazamiento = () => {

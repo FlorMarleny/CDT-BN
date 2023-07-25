@@ -1,0 +1,8 @@
+/* Slider.css */
+.slider-wrapper {
+    max-width: 100%;
+    max-height: 80vh;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  

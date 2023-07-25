@@ -1,0 +1,45 @@
+.logo {
+    background-size: cover;
+}
+.active-link {
+    font-weight: bold;
+}
+
+/* Navbar.css */
+/* Navbar Styles */
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+  }
+  
+  .navbar-brand img {
+    transition: max-width 0.3s ease, max-height 0.3s ease;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+
+
+
+/* Sticky Navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Link Animation */
+  .navbar-nav li .nav-link {
+    color: #00233F;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav li  .nav-link:hover {
+    transform: scale(1.1);
+    color: #000000; /* Change this to the color you desire for the link text on hover */
+  }
+  

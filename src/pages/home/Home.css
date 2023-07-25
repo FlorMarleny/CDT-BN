@@ -109,3 +109,12 @@
   border-top: 2px solid rgb(11, 11, 11);
   transform: rotate(-45deg);
 }
+.title{
+    font-family: 'Noto Sans';
+    font-size: 60px;
+    color: #00233F;
+}
+
+.resaltar{
+    color: #000000;
+}

@@ -113,7 +113,7 @@ const Home = () => {
     nextArrow: <NextArrow />,
     responsive: [
       {
-        breakpoint: 992, 
+        breakpoint: 992,
         settings: {
           slidesToShow: 1,
         },
@@ -222,7 +222,7 @@ const Home = () => {
         <h2 className="text-center">Testimonios</h2>
         <Row className="my-4">
           <Col sm={12} className="mx-auto">
-            <div style={{ maxWidth: "700px", margin: "0 auto" }}>
+            <div style={{ maxWidth: "auto", margin: "0 auto" }}>
               <Slider {...settings} className="testimonial-slider">
                 {opiniones.map((testimonial) => (
                   <div key={testimonial.id}>

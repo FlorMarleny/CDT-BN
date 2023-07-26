@@ -11,7 +11,18 @@
   --background-color: #f8f9fa; /* Define the default background color for light mode */
 }
 
+body{
+  background-color: #f7f8f8;
+}
 
+/* Common styles for both light and dark mode body */
+
+
+/* Add styles for the dark-mode body */
+.dark-mode-body {
+  background-color: #212529; /* You can set your desired background color for dark mode here */
+  
+}
 
 
 

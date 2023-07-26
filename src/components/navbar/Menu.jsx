@@ -1,9 +1,9 @@
 // Menu.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import CDTLogo from "../../img/CDT.png";
 import CDTLogoDark from "../../img/CDT-light.png";
-
+import '../../App.css';
 import { FaSun, FaMoon } from "react-icons/fa";
 import { useDarkMode } from "../../DarkModeContext"; // Import the useDarkMode hook
 import "./Menu.css";
@@ -25,10 +25,16 @@ const Menu = () => {
     setIsDarkMode((prevMode) => !prevMode);
   };
 
+  useEffect(() => {
+    // Add a class to the body element when isDarkMode changes
+    document.body.classList.toggle("dark-mode-body", isDarkMode);
+  }, [isDarkMode]);
+
 
   return (
-    <nav className={`navbar navbar-expand-lg ${isDarkMode ? "navbar-dark bg-dark" : "navbar-light bg-light"} mb-4 sticky-top`}>
-      <div className="container-fluid">
+
+    <nav className={`navbar navbar-expand-lg ${isDarkMode ? "navbar-dark bg-dark" : "navbar-light"} mb-4 sticky-top`}>
+      <div className="container container-fluid">
       <Link className="navbar-brand" to="/">
           <img className="logo" src={isDarkMode ? CDTLogoDark : CDTLogo} alt="Logo" />
         </Link>
@@ -105,6 +111,8 @@ const Menu = () => {
         </div>
       </div>
     </nav>
+   
+
   );
 };
 

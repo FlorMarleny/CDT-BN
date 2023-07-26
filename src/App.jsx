@@ -15,13 +15,12 @@ import Menu from "./components/Navbar/Menu";
 
 function App() {
 
-
   return (
 
     <DarkModeProvider> {/* Wrap the entire application with DarkModeProvider */}
     <BrowserRouter>
-      <div className="container">
       <Menu />
+      <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/nosotros" element={<Nosotros />} />

@@ -7,7 +7,10 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-    <ScrollButton />
+    
+        <App />
+        <ScrollButton />
+
+    
   </React.StrictMode>,
 )

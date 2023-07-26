@@ -82,3 +82,18 @@
     align-items: center;
 
 }
+
+
+
+
+.dark-mode-content .icon-text{
+    color: #a9b1b7;
+}
+
+.dark-mode-content  .title-dark{
+    color: #fcfdfd;
+}
+
+.dark-mode-content  span{
+    color: #fcfdfd;
+}

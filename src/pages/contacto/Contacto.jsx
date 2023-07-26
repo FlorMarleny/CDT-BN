@@ -5,19 +5,22 @@ import PacasmayoMap from "../../components/Maps/Pacasmayo";
 import TembladeraMap from "../../components/Maps/Tembladera";
 import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import Form from "../../components/Formulario/Formulario";
+import { useDarkMode } from "../../DarkModeContext";
 import './Contacto.css';
 
 const Contacto = () => {
+  const { isDarkMode } = useDarkMode();
+
   return (
     <div className='container'>
       <Helmet>
         <title>Contacto</title>
       </Helmet>
       
-      <div className='d-flex'>
+      <div className={`d-flex ${isDarkMode ? "dark-mode-content" : "light-mode-content"}`}>
         <div className='d-grid-maps'>
           <div className='map-container'>
-            <h2 className='mb-4'>Sech<span>ura</span></h2>
+            <h2 className='mb-4 title-dark '>Sech<span>ura</span></h2>
             <SechuraMap id="sechura-map" />
             <div className="icon-container mt-5">
               <div className="icon-with-text">
@@ -44,7 +47,7 @@ const Contacto = () => {
             </div>
           </div>
           <div className='map-container'>
-            <h2 className='mb-4'>Pacas<span>mayo</span></h2>
+            <h2 className='mb-4 title-dark'>Pacas<span>mayo</span></h2>
             <PacasmayoMap id="pacasmayo-map" />
             <div className="icon-container mt-5">
               <div className="icon-with-text">
@@ -71,7 +74,7 @@ const Contacto = () => {
             </div>
           </div>
           <div className='map-container'>
-            <h2 className='mb-4'>Tembl<span>adera</span></h2>
+            <h2 className='mb-4 title-dark'>Tembl<span>adera</span></h2>
             <TembladeraMap id="tembladera-map" />
             <div className="icon-container mt-5">
               <div className="icon-with-text">

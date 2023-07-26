@@ -1,12 +1,16 @@
+// Menu.js
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import CDTLogo from "../../img/CDT.png";
-import "./Menu.css"; // Import the CSS file if you have any styles specific to the navbar
+import CDTLogoDark from "../../img/CDT-light.png";
+
+import { FaSun, FaMoon } from "react-icons/fa";
+import { useDarkMode } from "../../DarkModeContext"; // Import the useDarkMode hook
+import "./Menu.css";
 
 const Menu = () => {
   const location = useLocation();
-
+  const { isDarkMode, setIsDarkMode } = useDarkMode();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -17,15 +21,20 @@ const Menu = () => {
     setIsDropdownOpen(false);
   };
 
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
+
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light mb-4 sticky-top">
+    <nav className={`navbar navbar-expand-lg ${isDarkMode ? "navbar-dark bg-dark" : "navbar-light bg-light"} mb-4 sticky-top`}>
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          <img className="logo" src={CDTLogo} alt="Logo" />
+      <Link className="navbar-brand" to="/">
+          <img className="logo" src={isDarkMode ? CDTLogoDark : CDTLogo} alt="Logo" />
         </Link>
 
         <button
-          className="navbar-toggler"
+          className={`navbar-toggler ${isDarkMode ? "text-light" : "text-dark"}`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -33,13 +42,10 @@ const Menu = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className={`navbar-toggler-icon ${isDarkMode ? "bg-light" : ""}`}></span>
         </button>
 
-        <div
-          className="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
+        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li
               className={`nav-item ${
@@ -78,18 +84,22 @@ const Menu = () => {
               </Link>
             </li>
             <li className="nav-item dropdown">
-              {" "}
-              {/* Agregamos la clase "dropdown" aquí */}
-              <button className="nav-link" onClick={toggleDropdown}>
+              <button className={`nav-link ${isDarkMode ? "text-light" : "text-dark"}`} onClick={toggleDropdown}>
                 Académico
               </button>
               {isDropdownOpen && (
-                <ul className="dropdown-menu" onClick={closeDropdown}>
+                <ul className={`dropdown-menu ${isDarkMode ? "dropdown-menu-dark" : ""}`} onClick={closeDropdown}>
                   {/* Aquí puedes agregar los elementos del menú desplegable */}
                   <li className="dropdown-item">Biblioteca virtual</li>
                   <li className="dropdown-item">Sistema de Administración</li>
                 </ul>
               )}
+            </li>
+            <li className="nav-item">
+              {/* Dark mode toggle button with icons */}
+              <button className={`nav-link ${isDarkMode ? "text-light" : "text-dark"}`} onClick={toggleDarkMode}>
+                {isDarkMode ? <FaSun /> : <FaMoon />}
+              </button>
             </li>
           </ul>
         </div>

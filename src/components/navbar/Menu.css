@@ -61,3 +61,20 @@
   transform: scale(1.1);
   color: #000000; /* Change this to the color you desire for the link text on hover */
 }
+
+/* Menu.css */
+/* Define common styles for dark mode */
+
+/* Styles for dark mode */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  background-color: #333;
+}
+
+
+/* Styles for link on hover in dark mode */
+.navbar-dark .navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+  color: #ffe601;
+}
+

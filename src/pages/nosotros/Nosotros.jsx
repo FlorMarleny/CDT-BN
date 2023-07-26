@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './Nosotros.css'
 import { Helmet } from 'react-helmet';
 import Slider from '../../components/Slider/Slider';
@@ -7,9 +7,12 @@ import Historia from "../../components/Historia/Historia";
 import Mision from "../../components/Mision-Vision/Mision";
 
 const Nosotros = () => {
+
+
+
   return (
-    <div className='container' >
-      <Menu />
+    <div className='' >
+      
       <Helmet>
         <title>Nosotros</title>
       </Helmet>

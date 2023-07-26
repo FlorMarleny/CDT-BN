@@ -109,3 +109,20 @@
   border-top: 2px solid rgb(11, 11, 11);
   transform: rotate(-45deg);
 }
+
+/* Common styles for both light and dark modes */
+
+
+/* Styles for light mode */
+.light-mode .home-container {
+  /* Styles specific to light mode */
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Styles for dark mode */
+.dark-mode .home-container {
+  /* Styles specific to dark mode */
+  background-color: #000000;
+  color: #ffffff;
+}

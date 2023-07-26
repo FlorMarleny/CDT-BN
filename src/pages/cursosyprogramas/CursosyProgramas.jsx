@@ -21,8 +21,7 @@ const CursosyProgramas = () => {
 
   return (
     <div>
-      <Menu />
-
+      
       <Helmet>
         <title>Cursos y Programas</title>
       </Helmet>

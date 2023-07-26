@@ -4,6 +4,7 @@ import App from './App.jsx'
 import ScrollButton from './components/Clickear/Desplazamiento'
 import './index.css'
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />

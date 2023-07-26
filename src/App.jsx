@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/home/Home";
 import Nosotros from "./pages/nosotros/Nosotros";
@@ -8,11 +8,20 @@ import Academico   from "./pages/academico/Academico";
 import NotFoundPage from './pages/404/NotFoundPage';
 import Cursos from './pages/cursos/Cursos';
 import Programas from './pages/programas/Programas';
+import { DarkModeProvider} from "./DarkModeContext"; // Import the DarkModeProvider
+import Menu from "./components/Navbar/Menu";
+
+
 
 function App() {
+
+
   return (
+
+    <DarkModeProvider> {/* Wrap the entire application with DarkModeProvider */}
     <BrowserRouter>
-      <div className='container'>
+      <div className="container">
+      <Menu />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/nosotros" element={<Nosotros />} />
@@ -25,6 +34,7 @@ function App() {
         </Routes>
       </div>
     </BrowserRouter>
+    </DarkModeProvider>
   );
 }
 

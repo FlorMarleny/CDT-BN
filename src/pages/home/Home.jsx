@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import "../../App.css";
 import "./Home.css";
-import Menu from "../../components/Navbar/Menu";
+import { useDarkMode } from "../../DarkModeContext";
 import imagenPO from "../../img/img1.jpeg";
 import imagenP from "../../img/img2.jpeg";
 import portada from "../../img/img3.jpeg";
@@ -101,6 +101,8 @@ const NextArrow = (props) => {
 };
 
 const Home = () => {
+  const { isDarkMode } = useDarkMode();
+
   const settings = {
     dots: false,
     infinite: true,
@@ -122,14 +124,14 @@ const Home = () => {
   };
 
   return (
-    <div className="container">
-      <Menu />
+    <div className={`home-container ${isDarkMode ? "dark-mode" : "light-mode"}`}>
+  
 
       <Helmet>
         <title>Inicio</title>
       </Helmet>
 
-      <div className="row mb-5">
+      <div className={`row mb-5 ${isDarkMode ? "dark-mode-content" : "light-mode-content"}`}>
         <div className="col-md-6">
           <h1 className="display-1 fw-bold title">
             Siempre apostando por una{" "}
@@ -182,7 +184,7 @@ const Home = () => {
       </div>
 
       {/* imágenes */}
-      <div className="row mb-5">
+      <div className={`row mb-5 ${isDarkMode ? "dark-mode-content" : "light-mode-content"}`}>
         <div className="col-md-4">
           <div className="header-container h-100 ">
             <img
@@ -222,7 +224,7 @@ const Home = () => {
         <h2 className="text-center">Testimonios</h2>
         <Row className="my-4">
           <Col sm={12} className="mx-auto">
-            <div style={{ maxWidth: "auto", margin: "0 auto" }}>
+            <div style={{ maxWidth: "auto", margin: "0 auto" }} className={`${isDarkMode ? "dark-mode-content" : "light-mode-content"}`}>
               <Slider {...settings} className="testimonial-slider ">
                 {opiniones.map((testimonial) => (
                   <div key={testimonial.id}>
@@ -236,7 +238,7 @@ const Home = () => {
       </Container>
 
       {/* COLLAGE */}
-      <div className="row">
+      <div className={`row ${isDarkMode ? "dark-mode-content" : "light-mode-content"}`}>
         <div className="col-md-6">
           <img
             src={collage1}

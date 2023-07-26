@@ -36,7 +36,7 @@ const Programas = () => {
 
   return (
     <div>
-      <Menu />
+
 
       <Helmet>
         <title>Programas</title>
@@ -47,9 +47,8 @@ const Programas = () => {
           {programas.map((programa) => (
             <button
               key={programa.id}
-              className={`program-button btn btn-primary m-2 ${
-                programaActivo === programa.id ? "active" : ""
-              }`}
+              className={`program-button btn btn-primary m-2 ${programaActivo === programa.id ? "active" : ""
+                }`}
               onClick={() => handleProgramaClick(programa.id)}
             >
               {programa.nombre}
@@ -73,9 +72,8 @@ const Programas = () => {
                         <img
                           src={subprograma.imagen}
                           alt={subprograma.nombre}
-                          className={`card-img-top  ${
-                            mouseOverCard === subIndex ? "img-darken" : ""
-                          }`}
+                          className={`card-img-top  ${mouseOverCard === subIndex ? "img-darken" : ""
+                            }`}
                         />
                         {mouseOverCard === subIndex && (
                           <p className="card-text mb-0 card-gratis-overlay">

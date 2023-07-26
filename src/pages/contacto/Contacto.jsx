@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
-import Menu from "../../components/Navbar/Menu";
 import SechuraMap from "../../components/Maps/Sechura";
 import PacasmayoMap from "../../components/Maps/Pacasmayo";
 import TembladeraMap from "../../components/Maps/Tembladera";
@@ -14,7 +13,7 @@ const Contacto = () => {
       <Helmet>
         <title>Contacto</title>
       </Helmet>
-      <Menu />
+      
       <div className='d-flex'>
         <div className='d-grid-maps'>
           <div className='map-container'>

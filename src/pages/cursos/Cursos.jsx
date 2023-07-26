@@ -10,7 +10,7 @@ const Cursos = () => {
       <Helmet>
         <title>Cursos</title>
       </Helmet>
-      <h1>SSSSSSSSSSSSSSSSS</h1>
+      
       
       
     </div>

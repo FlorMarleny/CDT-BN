@@ -6,6 +6,8 @@ import CursosyProgramas  from "./pages/cursosyprogramas/CursosyProgramas";
 import Contacto  from "./pages/contacto/Contacto";
 import Academico   from "./pages/academico/Academico";
 import NotFoundPage from './pages/404/NotFoundPage';
+import Cursos from './pages/cursos/Cursos';
+import Programas from './pages/programas/Programas';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/cursosyprogramas" element={<CursosyProgramas />} />
+          <Route path="/cursos" element={<Cursos />} />
+          <Route path="/programas" element={<Programas />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/academico" element={<Academico />} />
           <Route path='*' element={<NotFoundPage />} />

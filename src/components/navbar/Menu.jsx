@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import CDTLogo from "../../img/CDTLogo.png";
-import './Menu.css'; // Import the CSS file if you have any styles specific to the navbar
+import CDTLogo from "../../img/CDT.png";
+import "./Menu.css"; // Import the CSS file if you have any styles specific to the navbar
 
 const Menu = () => {
   const location = useLocation();
@@ -18,14 +18,10 @@ const Menu = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light mb-4">
+    <nav className="navbar navbar-expand-lg navbar-light mb-4 sticky-top ">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img
-            className="logo"
-            src={CDTLogo}
-            alt="Logo"
-          />
+          <img className="logo" src={CDTLogo} alt="Logo" />
         </Link>
 
         <button
@@ -40,29 +36,50 @@ const Menu = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul className="navbar-nav">
-            <li className={`nav-item ${location.pathname === '/' ? 'active-link' : ''}`}>
+            <li
+              className={`nav-item ${
+                location.pathname === "/" ? "active-link" : ""
+              }`}
+            >
               <Link className="nav-link" to="/">
                 Inicio
               </Link>
             </li>
-            <li className={`nav-item ${location.pathname === '/nosotros' ? 'active-link' : ''}`}>
+            <li
+              className={`nav-item ${
+                location.pathname === "/nosotros" ? "active-link" : ""
+              }`}
+            >
               <Link className="nav-link" to="/nosotros">
                 Nosotros
               </Link>
             </li>
-            <li className={`nav-item ${location.pathname === '/cursosyprogramas' ? 'active-link' : ''}`}>
+            <li
+              className={`nav-item ${
+                location.pathname === "/cursosyprogramas" ? "active-link" : ""
+              }`}
+            >
               <Link className="nav-link" to="/cursosyprogramas">
                 Cursos y Programas
               </Link>
             </li>
-            <li className={`nav-item ${location.pathname === '/contacto' ? 'active-link' : ''}`}>
+            <li
+              className={`nav-item ${
+                location.pathname === "/contacto" ? "active-link" : ""
+              }`}
+            >
               <Link className="nav-link" to="/contacto">
                 Contacto
               </Link>
             </li>
-            <li className="nav-item dropdown"> {/* Agregamos la clase "dropdown" aquí */}
+            <li className="nav-item dropdown">
+              {" "}
+              {/* Agregamos la clase "dropdown" aquí */}
               <button className="nav-link" onClick={toggleDropdown}>
                 Académico
               </button>

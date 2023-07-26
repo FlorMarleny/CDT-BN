@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import Menu from "../../components/Navbar/Menu";
 import "./CursosyProgramas.css";
@@ -7,33 +7,17 @@ import { programaPerfil } from "./Datos/programaPerfil";
 import { programaEducar } from "./Datos/programaEducar";
 import { programaDojo } from "./Datos/programaDojo";
 import { programaOficio } from "./Datos/programaOficio";
+import imagenInfo from "../../img/imagenInfo.png";
+import { FaChalkboardTeacher, FaUserFriends, FaTable } from "react-icons/fa";
 
 const CursosyProgramas = () => {
-  const [programaActivo, setProgramaActivo] = useState(null);
   const programas = [
     programaTransversal,
     programaPerfil,
     programaEducar,
-    programaDojo,
     programaOficio,
+    programaDojo,
   ];
-  const [mouseOverCard, setMouseOverCard] = useState(null);
-
-  const handleMouseEnter = (index) => {
-    setMouseOverCard(index);
-  };
-
-  const handleMouseLeave = () => {
-    setMouseOverCard(null);
-  };
-
-  const handleProgramaClick = (programaId) => {
-    if (programaActivo === programaId) {
-      setProgramaActivo(null);
-    } else {
-      setProgramaActivo(programaId);
-    }
-  };
 
   return (
     <div>
@@ -44,78 +28,131 @@ const CursosyProgramas = () => {
       </Helmet>
 
       <div className="container">
-        <div className="button-container d-flex flex-wrap justify-content-center">
-          {programas.map((programa) => (
-            <button
-              key={programa.id}
-              className={`program-button btn btn-primary m-2 ${
-                programaActivo === programa.id ? "active" : ""
-              }`}
-              onClick={() => handleProgramaClick(programa.id)}
-            >
-              {programa.nombre}
-            </button>
-          ))}
+        <div
+          style={{
+            textAlign: "center",
+            margin: "20px 0",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <h3 style={{ fontSize: "32px", fontWeight: "bold" }}>PROGRAMAS</h3>
+          {/* <hr style={{ width: "20%", border: "1px solid black", marginLeft: "10px" }} /> */}
         </div>
 
-        <div className="card-container row justify-content-center ">
-          {programas.map(
-            (programa) =>
-              programaActivo === programa.id && (
-                <div className="row" key={programa.id}>
-                  {programa.subprogramas.map((subprograma, subIndex) => (
-                    <div
-                      key={subprograma.id}
-                      className="col-md-3 mt-5 position-relative"
-                      onMouseEnter={() => handleMouseEnter(subIndex)}
-                      onMouseLeave={handleMouseLeave}
-                    >
-                      <div className="card p-0 position-relative h-100 d-flex flex-column ">
-                        <img
-                          src={subprograma.imagen}
-                          alt={subprograma.nombre}
-                          className={`card-img-top  ${
-                            mouseOverCard === subIndex ? "img-darken" : ""
-                          }`}
-                        />
-                        {mouseOverCard === subIndex && (
-                          <p className="card-text mb-0 card-gratis-overlay">
-                            GRATIS
-                          </p>
-                        )}
-                        {/* <div className="programa-overlay">
-                         <center><p>{programa.nombre}</p></center> 
-                        </div> */}
-                        <div className="card-body d-flex flex-column p-3">
-                          <p className={`mb-0`} style={{ color: "plum" }}>
-                            <strong style={{ color: "#bdc3c7" }}>
-                              {subprograma.modalidad}
-                            </strong>
-                          </p>
-                          <h5
-                            className="card-title"
-                            style={{ color: "#2c3e50" }}
-                          >
-                            <strong>{subprograma.nombre}</strong>
-                          </h5>
-                          <p
-                            className="card-text card-text-small flex-grow-1"
-                            style={{ color: "#525252" }}
-                          >
-                            {subprograma.texto}
-                          </p>
-                          <div className="d-flex justify-content-between align-items-center mt-3 mb-3">
-                            <button className="btn btn-dark button-ver-mas">
-                              VER MÁS
-                            </button>
-                          </div>
+        {/* PROGRAMAS */}
+        <div className="card-container row justify-content-center">
+          <div className="row">
+            <a
+              href="/Programas"
+              style={{ textDecoration: "none", textAlign: "right" }}
+            >
+              Ver todos los programas
+            </a>
+
+            {programas.slice(0, 4).map((programa) => (
+              <div
+                className="col-md-3 mt-5 position-relative h-100"
+                key={programa.id}
+              >
+                <div className="card p-0 position-relative h-100 d-flex flex-column">
+                  {programa.subprogramas.slice(0, 1).map((subprograma) => (
+                    <div key={subprograma.id} className="card-subprograma">
+                      <img
+                        src={subprograma.imagen}
+                        alt={subprograma.nombre}
+                        className="card-img-top"
+                        style={{
+                          width: "100%",
+                          height: "200px",
+                          objectFit: "cover",
+                        }}
+                      />
+
+                      <p className="card-text mb-0 card-gratis-overlay">
+                        GRATIS
+                      </p>
+
+                      <div className="card-body d-flex flex-column p-3">
+                        <p className={`mb-0`} style={{ color: "plum" }}>
+                          <strong style={{ color: "#bdc3c7" }}>
+                            {subprograma.modalidad}
+                          </strong>
+                        </p>
+                        <h5 className="card-title" style={{ color: "#2c3e50" }}>
+                          <strong>{subprograma.nombre}</strong>
+                        </h5>
+                        <p
+                          className="card-text card-text-small flex-grow-1"
+                          style={{ color: "#525252" }}
+                        >
+                          {subprograma.texto}
+                        </p>
+                        <div className="d-flex justify-content-between align-items-center mb-3">
+                          <button className="btn btn-dark button-ver-mas">
+                            VER MÁS
+                          </button>
                         </div>
                       </div>
                     </div>
                   ))}
                 </div>
-              )
-          )}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* CURSOSSS */}
+        <div
+          style={{
+            textAlign: "center",
+            margin: "150px 0",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <h3 style={{ fontSize: "32px", fontWeight: "bold" }}>CURSOS</h3>
+        </div>
+
+        {/* INFORMACIÓN */}
+
+        <div className="row align-items-center">
+          <div className="col-md-6">
+            <img
+              src={imagenInfo}
+              alt="Imagen"
+              className="img-fluid"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+          <div className="col-md-6">
+            <div>
+              <h2>Tecnología Educativa para una Experiencia Interactiva</h2>
+            </div>
+            <div className="d-flex align-items-start mb-3">
+              <FaChalkboardTeacher size={48} className="me-3" />
+              <p className="fs-5">
+                Los profesores no se pierden en la vista de cuadrícula y tienen
+                un espacio Podium dedicado.
+              </p>
+            </div>
+            <div className="d-flex align-items-start mb-3">
+              <FaUserFriends size={48} className="me-3" />
+              <p className="fs-5">
+                Los alumnos y los presentadores se pueden mover al frente de la
+                clase.
+              </p>
+            </div>
+            <div className="d-flex align-items-start mb-3">
+              <FaTable size={48} className="me-3" />
+              <p className="fs-5">
+                Los profesores pueden ver fácilmente todos los estudiantes y los
+                datos de la clase al mismo tiempo.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

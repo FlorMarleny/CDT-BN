@@ -33,7 +33,7 @@ const Menu = () => {
 
   return (
 
-    <nav className={`navbar navbar-expand-lg ${isDarkMode ? "navbar-dark bg-dark" : "navbar-light"} mb-4 sticky-top`}>
+    <nav className={`navbar navbar-expand-lg ${isDarkMode ? "navbar-dark" : "navbar-light"} mb-4 sticky-top`}>
       <div className="container container-fluid">
       <Link className="navbar-brand" to="/">
           <img className="logo" src={isDarkMode ? CDTLogoDark : CDTLogo} alt="Logo" />

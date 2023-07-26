@@ -45,6 +45,7 @@
   margin-left: 25px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   text-align: center;
+  border-radius: 10px;
 }
 
 .testimonial img {
@@ -110,6 +111,28 @@
   transform: rotate(-45deg);
 }
 
-/* Common styles for both light and dark modes */
+/* Common styles dark mode */
+.dark-mode-content h1 {
+  color: #fcfdfd; 
+}
+.dark-mode-content .resaltar{
+  color: #c6cdd2;
+}
 
 
+
+.dark-mode-content p{
+  color: #c0bfba;
+}
+
+.dark-mode-content .user-opinion{
+  color: #000000;
+}
+
+.dark-mode-content .user-name{
+  color: #DF040C;
+}
+
+.dark-mode-content .arrow{
+  color: #f3f3f4;
+}

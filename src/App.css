@@ -1,5 +1,5 @@
 #root {
-  max-width: auto; 
+  max-width: auto;
   margin: 0 auto;
   padding: 0%;
   /* text-align: center; */
@@ -7,24 +7,21 @@
 
 /* styles.css or your global CSS file */
 :root {
-  --primary-color: #007bff; /* Define the default color for light mode */
-  --background-color: #f8f9fa; /* Define the default background color for light mode */
+  --primary-color: #007bff;
+  /* Define the default color for light mode */
+  --background-color: #f8f9fa;
+  /* Define the default background color for light mode */
 }
 
-body{
+body {
   background-color: #f7f8f8;
 }
 
-/* Common styles for both light and dark mode body */
-
-
 /* Add styles for the dark-mode body */
 .dark-mode-body {
-  background-color: #212529; /* You can set your desired background color for dark mode here */
-  
+  background-color: #111b22;
+  /* You can set your desired background color for dark mode here */
 }
-
-
 
 .card {
   padding: 2em;
@@ -38,14 +35,13 @@ h2 {
   font-family: "Open Sans", sans-serif;
   color: #484848;
   font-weight: bold;
-  font-size: 22px; /* Slightly increase the font size */
+  font-size: 22px;
+  /* Slightly increase the font size */
   text-shadow: 1px 1px #e0e0e0;
 }
 
-h2 > span {
-  color: #484848; /* Black color for the span text */
- /* text-shadow: 1px 2px 1px yellow;  Propiedad para agregar sombra amarilla */
+h2>span {
+  color: #484848;
+  /* Black color for the span text */
+  /* text-shadow: 1px 2px 1px yellow;  Propiedad para agregar sombra amarilla */
 }
-
-
-

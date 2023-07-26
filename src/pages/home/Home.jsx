@@ -84,7 +84,7 @@ const PrevArrow = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <span>&#8592;</span>
+      <span className="arrow">&#8592;</span>
     </div>
   );
 };
@@ -93,7 +93,7 @@ const NextArrow = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <span>&#8594;</span>
+      <span className="arrow">&#8594;</span>
     </div>
   );
 };

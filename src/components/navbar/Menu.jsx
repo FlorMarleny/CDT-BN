@@ -18,7 +18,7 @@ const Menu = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light mb-4">
+    <nav className="navbar navbar-expand-lg navbar-light mb-4 sticky-top">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img className="logo" src={CDTLogo} alt="Logo" />

@@ -1,12 +1,12 @@
 /* General Styles */
   p {
-    font-family: "Lato", sans-serif;
+    font-family: 'HelveticaNeue', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px; /* Slightly increase the font size */
     line-height: 1.6; /* Add line-height for better readability */
     text-align: justify;
-    color: #333333;
+    color: #000000;
   }
   
   span {

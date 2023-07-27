@@ -1,12 +1,39 @@
 .title {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 70px;
+  font-family: "Nike Futura", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 72px;
   color: #00233f;
+  font-stretch: 100%;
+
+  /* Neumorphic effect */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.6);
+  border-radius: 16px; /* Optional: Add some rounded corners to soften the effect */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px; /* Optional: Add some padding to create a 3D look */
+
 }
 
-.resaltar {
-  color: #000000;
+/* Define a keyframe animation for the professional effect */
+@keyframes professionalEffect {
+  0% {
+    color: #000000; /* Start with black color */
+  }
+  50% {
+    color: #1a1a1a; /* Change to dark blue (#1a1a1a) color at 50% of the animation */
+  }
+  100% {
+    color: #000000; /* Go back to black color at the end of the animation */
+  }
 }
+
+/* Apply the animation to the .resaltar class */
+.resaltar {
+  animation: professionalEffect 2s infinite; /* Set the animation duration and repeat infinitely */
+
+}
+
 .input-group {
   margin-bottom: 20px;
 }
@@ -111,7 +138,31 @@
   transform: rotate(-45deg);
 }
 
+
+
+
 /* Common styles dark mode */
+
+/* Define a keyframe animation for the professional effect */
+@keyframes darkprofessionalEffect {
+  0% {
+    color: yellow; /* Start with black color */
+  }
+  50% {
+    color: #eeff41; 
+  }
+  100% {
+    color: yellow; /* Go back to black color at the end of the animation */
+  }
+}
+
+/* Apply the animation to the .resaltar class */
+.dark-mode-content .resaltar {
+  animation: darkprofessionalEffect 2s infinite; /* Set the animation duration and repeat infinitely */
+
+}
+
+
 .dark-mode-content h1 {
   color: #fcfdfd; 
 }

@@ -8,35 +8,66 @@
 
   /* Neumorphic effect */
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.6);
-  border-radius: 16px; /* Optional: Add some rounded corners to soften the effect */
+  border-radius: 16px;
+  /* Optional: Add some rounded corners to soften the effect */
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-right: 8px; /* Optional: Add some padding to create a 3D look */
+  padding-right: 8px;
+  /* Optional: Add some padding to create a 3D look */
 
 }
 
 /* Define a keyframe animation for the professional effect */
 @keyframes professionalEffect {
   0% {
-    color: #000000; /* Start with black color */
+    color: #f02a22;
+    /* Start with black color */
   }
+
   50% {
-    color: #1a1a1a; /* Change to dark blue (#1a1a1a) color at 50% of the animation */
+    color: #d50000;
+    /* Change to dark blue (#1a1a1a) color at 50% of the animation */
   }
+
   100% {
-    color: #000000; /* Go back to black color at the end of the animation */
+    color: #f02a22;
+    /* Go back to black color at the end of the animation */
   }
 }
 
 /* Apply the animation to the .resaltar class */
-.resaltar {
-  animation: professionalEffect 2s infinite; /* Set the animation duration and repeat infinitely */
+.text-gratuito {
+  font-weight: 900;
+  animation: professionalEffect 2s infinite;
+  /* Set the animation duration and repeat infinitely */
 
 }
+
+.resaltar {
+  color: #fc9a13;
+}
+
+u{
+  color: #0092e4;
+}
+a {
+  font-family: "HelveticaNeue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(255, 255, 255);
+  color: #0092e4;
+  cursor: "pointer";
+  font-stretch: 100%;
+}
+
+
 
 .input-group {
   margin-bottom: 20px;
 }
+
 .header-container {
   position: relative;
   overflow: hidden;
@@ -109,6 +140,7 @@
   margin: 10px 0;
   text-align: center;
 }
+
 .slick-prev,
 .slick-next {
   width: 45px;
@@ -146,44 +178,50 @@
 /* Define a keyframe animation for the professional effect */
 @keyframes darkprofessionalEffect {
   0% {
-    color: yellow; /* Start with black color */
+    color: yellow;
+    /* Start with black color */
   }
+
   50% {
-    color: #eeff41; 
+    color: #eeff41;
   }
+
   100% {
-    color: yellow; /* Go back to black color at the end of the animation */
+    color: yellow;
+    /* Go back to black color at the end of the animation */
   }
 }
 
 /* Apply the animation to the .resaltar class */
 .dark-mode-content .resaltar {
-  animation: darkprofessionalEffect 2s infinite; /* Set the animation duration and repeat infinitely */
+  animation: darkprofessionalEffect 2s infinite;
+  /* Set the animation duration and repeat infinitely */
 
 }
 
 
 .dark-mode-content h1 {
-  color: #fcfdfd; 
+  color: #fcfdfd;
 }
-.dark-mode-content .resaltar{
+
+.dark-mode-content .resaltar {
   color: #c6cdd2;
 }
 
 
 
-.dark-mode-content p{
+.dark-mode-content p {
   color: #c0bfba;
 }
 
-.dark-mode-content .user-opinion{
+.dark-mode-content .user-opinion {
   color: #000000;
 }
 
-.dark-mode-content .user-name{
+.dark-mode-content .user-name {
   color: #DF040C;
 }
 
-.dark-mode-content .arrow{
+.dark-mode-content .arrow {
   color: #f3f3f4;
 }

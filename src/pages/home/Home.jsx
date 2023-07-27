@@ -9,7 +9,8 @@ import "./Home.css";
 import { useDarkMode } from "../../DarkModeContext";
 import imagenPO from "../../img/img1.jpeg";
 import imagenP from "../../img/img2.jpeg";
-import portada from "../../img/img3.jpeg";
+// import portada from "../../img/img3.jpeg";
+import portada from "../../img/portrait-young-man.png";
 import imagenCursos from "../../img/img4.jpeg";
 
 import collage1 from "../../img/collage1.jpg";
@@ -139,19 +140,19 @@ const Home = () => {
 
           <p>
             Brindamos oportunidades de capacitación a la población de manera{" "}
-            <strong className="text-danger">GRATUITA</strong>{" "}
+            <strong className="text-gratuito">GRATUITA</strong>{" "}
           </p>
 
-          <div className="input-group mb-3" style={{ maxWidth: "360px" }}>
+          <div className="input-group mb-3" style={{ maxWidth: "385px" }}>
             <input
               type="text"
-              className="form-control"
+              className="form-control shadow-sm"
               placeholder="Busque nuestros más de 15 cursos"
               aria-label="Buscar"
               aria-describedby="button-addon2"
             />
             <button
-              className="btn btn-outline-danger"
+              className="btn btn-danger"
               type="button"
               id="button-addon2"
             >
@@ -160,19 +161,14 @@ const Home = () => {
           </div>
 
           {/* Enlace "APRENDE MÁS" */}
-          <a
+          <u><a
             href="#"
-            style={{
-              textDecoration: "underline",
-              color: "blue",
-              cursor: "pointer",
-            }}
           >
-            APRENDE MÁS
-          </a>
+            Aprende más
+          </a></u>
         </div>
 
-        <div className="col-md-6">
+        <div className="col-md-6 bg-danger">
           <img
             src={portada}
             alt="Imagen 1"
@@ -219,7 +215,7 @@ const Home = () => {
 
       {/* Carrusel de opiniones */}
       <Container>
-        <h2 className="text-center">Testimonios</h2>
+        <h2 className="text-center">Testi<span>monios</span></h2>
         <Row className="my-4">
           <Col sm={12} className="mx-auto">
             <div style={{ maxWidth: "auto", margin: "0 auto" }} className={`${isDarkMode ? "dark-mode-content" : "light-mode-content"}`}>

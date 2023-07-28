@@ -11,6 +11,7 @@ import imagenPO from "../../img/img1.jpeg";
 import imagenP from "../../img/img2.jpeg";
 // import portada from "../../img/img3.jpeg";
 import portada from "../../img/portrait-young-man.png";
+import empresa from "../../img/Pacasmayo Color.png";
 import imagenCursos from "../../img/img4.jpeg";
 
 import collage1 from "../../img/collage1.jpg";
@@ -18,6 +19,17 @@ import collage2 from "../../img/collage2.jpg";
 import collage3 from "../../img/collage3.jpg";
 import collage4 from "../../img/collage4.jpg";
 import userImage1 from "../../img/imagenCursos.jpg";
+
+
+import Vector1 from '../../img/Vector1.png';
+import Vector2 from '../../img/Vector2.png';
+import boy from '../../img/boy.png';
+import thumbup from '../../img/thumbup.png';
+import Crown from '../../img/crown.png';
+import glassesimoji from '../../img/glassesimoji.png';
+import FloatingDiv from '../../components/FloatingDiv/FloatingDiv';
+
+
 const opiniones = [
   {
     id: 1,
@@ -114,7 +126,7 @@ const Home = () => {
     nextArrow: <NextArrow />,
     responsive: [
       {
-        breakpoint: 992, 
+        breakpoint: 992,
         settings: {
           slidesToShow: 1,
         },
@@ -124,7 +136,7 @@ const Home = () => {
 
   return (
     <div className={`home-container ${isDarkMode ? "dark-mode" : "light-mode"}`}>
-  
+
 
       <Helmet>
         <title>Inicio</title>
@@ -168,13 +180,49 @@ const Home = () => {
           </a></u>
         </div>
 
-        <div className="col-md-6 bg-danger">
-          <img
+        <div className="col-md-6 mt-5">
+          {/* <img
             src={portada}
             alt="Imagen 1"
             style={{ maxWidth: "100%", height: "auto" }}
-          />
+          /> */}
+
+          <div className="i-right">
+            <img src={Vector1} alt="" />
+            <img src={Vector2} alt="" />
+            <img src={boy} alt="" />
+            
+            <div style={{ top: '-6%', left: '68%' }}>
+              <FloatingDiv image={Crown} txt1='Web' txt2='Developer' />
+            </div>
+            <div style={{ top: '22.5rem', left: '0rem' }}>
+              <FloatingDiv image={thumbup} txt1='Best Design' txt2='Award' />
+            </div>
+
+            {/* Blur divs */}
+            <div className="blur" style={{ background: "rgba(238 210 255)" }}>
+            </div>
+            <div className="blur"
+              style={{
+                background: '#c1f5ff',
+                top: '17rem',
+                width: '21rem',
+                height: '11rem',
+                left: '-9rem',
+              }}>
+
+            </div>
+
+          </div>
+
         </div>
+
+
+
+
+
+
+
       </div>
 
       {/* imágenes */}
@@ -213,25 +261,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Carrusel de opiniones */}
-      <Container>
-        <h2 className="text-center">Testi<span>monios</span></h2>
-        <Row className="my-4">
-          <Col sm={12} className="mx-auto">
-            <div style={{ maxWidth: "auto", margin: "0 auto" }} className={`${isDarkMode ? "dark-mode-content" : "light-mode-content"}`}>
-              <Slider {...settings} className="testimonial-slider ">
-                {opiniones.map((testimonial) => (
-                  <div key={testimonial.id}>
-                    <Testimonial {...testimonial} />
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-
       {/* COLLAGE */}
+      <h2 className="mb-4">Nuestras<span> experiencias</span></h2>
       <div className={`row ${isDarkMode ? "dark-mode-content" : "light-mode-content"}`}>
         <div className="col-md-6">
           <img
@@ -262,7 +293,38 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <section className="banner">
+        <img src={empresa} alt="Logo de la Empresa" id="logo" />
+        <p>¡Gracias a CEMENTOS PACASMAYO S.A.A!</p>
+      </section>
+
+
+      {/* Carrusel de opiniones */}
+      <Container>
+        <h2 className="text-center mt-5 mb-4">Testi<span>monios</span></h2>
+        <Row className="my-4">
+          <Col sm={12} className="mx-auto">
+            <div style={{ maxWidth: "auto", margin: "0 auto" }} className={`${isDarkMode ? "dark-mode-content" : "light-mode-content"}`}>
+              <Slider {...settings} className="testimonial-slider ">
+                {opiniones.map((testimonial) => (
+                  <div key={testimonial.id}>
+                    <Testimonial {...testimonial} />
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+
+
     </div>
+
+
+
+
   );
 };
 

@@ -48,7 +48,7 @@
 }
 
 u{
-  color: #0092e4;
+  color: #007bff;
 }
 a {
   font-family: "HelveticaNeue", sans-serif;
@@ -57,7 +57,7 @@ a {
   font-style: normal;
   text-transform: none;
   text-decoration: none solid rgb(255, 255, 255);
-  color: #0092e4;
+  color: #007bff;
   cursor: "pointer";
   font-stretch: 100%;
 }
@@ -225,3 +225,81 @@ a {
 .dark-mode-content .arrow {
   color: #f3f3f4;
 }
+
+/* Estilos para el banner destacado */
+.banner {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.banner #logo {
+  width: 200px; /* Ajusta el tamaño del logo según tus necesidades */
+  animation: heartbeat 2s infinite; /* Animación del logo (ejemplo de latido) */
+}
+
+.banner h1 {
+  font-family: 'Roboto', sans-serif; /* Cambia la fuente según tus preferencias */
+  color: black; /* Color del texto */
+  font-size: 28px; /* Tamaño del texto */
+}
+
+/* Estilos para el contenido principal y otros elementos */
+/* Añade aquí los estilos para imágenes, testimonios, etc. */
+
+/* Animación del latido del logo */
+@keyframes heartbeat {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+
+.i-right{
+  flex: 1;
+  position: relative;
+}
+
+.i-right>*{
+  position: absolute;
+  z-index: 1;
+}
+
+.i-right>:nth-child(1)
+{
+  transform: scale(0.69);
+  left: -15%;
+  top: -9%;
+}
+
+.i-right>:nth-child(2){
+  top: -4.6rem;
+  transform: scale(0.67);
+  left: -3rem;
+}
+
+.i-right>:nth-child(3){
+  transform: scale(1.4);
+  left: 28%;
+}
+
+
+
+.blur{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(212px);
+  z-index: -9;
+  top: 18%;
+  left: 56%;
+  filter: blur(72px);
+}
+

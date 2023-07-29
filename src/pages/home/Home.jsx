@@ -11,7 +11,8 @@ import imagenPO from "../../img/img1.jpeg";
 import imagenP from "../../img/img2.jpeg";
 // import portada from "../../img/img3.jpeg";
 import portada from "../../img/portrait-young-man.png";
-import empresa from "../../img/Pacasmayo Color.png";
+import empresa from "../../img/Pacasmayo3.png";
+import pacasmayo from "../../img/banner-pacasmayo.jpg";
 import imagenCursos from "../../img/img4.jpeg";
 
 import collage1 from "../../img/collage1.jpg";
@@ -28,6 +29,7 @@ import thumbup from '../../img/thumbup.png';
 import Crown from '../../img/crown.png';
 import glassesimoji from '../../img/glassesimoji.png';
 import FloatingDiv from '../../components/FloatingDiv/FloatingDiv';
+import Footer from "../../components/Footer/Footer";
 
 
 const opiniones = [
@@ -191,7 +193,7 @@ const Home = () => {
             <img src={Vector1} alt="" />
             <img src={Vector2} alt="" />
             <img src={boy} alt="" />
-            
+
             <div style={{ top: '-6%', left: '68%' }}>
               <FloatingDiv image={Crown} txt1='Web' txt2='Developer' />
             </div>
@@ -294,11 +296,28 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="banner">
-        <img src={empresa} alt="Logo de la Empresa" id="logo" />
-        <p>¡Gracias a CEMENTOS PACASMAYO S.A.A!</p>
-      </section>
-
+      <aside className="responsive-banner first">
+        <div className="container-envelope">
+          <svg className="cirle-a img" height="160" width="160">
+            <circle cx="80" cy="80" r="80" />
+          </svg>
+          <svg className="cirle-b img" height="60" width="60">
+            <circle cx="30" cy="30" r="30" />
+          </svg>
+          <svg className="cirle-c img" height="600" width="600">
+            <circle cx="300" cy="300" r="300" />
+          </svg>
+          <svg className="cirle-d img" height="60" width="60">
+            <circle cx="30" cy="30" r="30" />
+          </svg>
+          <img className="imagen" src={pacasmayo} />
+          <div className="col-xs-12">
+            <img src={empresa} alt="Logo de la Empresa" id="logo" />
+            <p className="" >Gracias a <strong>Cementos Pacasmayo</strong> S.A.A.</p>
+            <a className="a more-link" target="_blank" href="https://www.cementospacasmayo.com.pe/">Ven a visitarnos</a>
+          </div>
+        </div>
+      </aside>
 
       {/* Carrusel de opiniones */}
       <Container>
@@ -317,6 +336,8 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
+
+     <Footer /> 
 
 
 

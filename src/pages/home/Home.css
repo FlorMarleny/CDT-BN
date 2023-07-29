@@ -47,9 +47,10 @@
   color: #fc9a13;
 }
 
-u{
+u {
   color: #007bff;
 }
+
 a {
   font-family: "HelveticaNeue", sans-serif;
   font-size: 16px;
@@ -122,7 +123,7 @@ a {
 }
 
 .user-rating span {
-  color: rgb(221, 182, 44);
+  color: #FFC619;
 }
 
 .user-rating {
@@ -139,6 +140,7 @@ a {
   font-weight: bold;
   margin: 10px 0;
   text-align: center;
+  color: #DF040C;
 }
 
 .slick-prev,
@@ -172,6 +174,47 @@ a {
 
 
 
+.i-right {
+  flex: 1;
+  position: relative;
+}
+
+.i-right>* {
+  position: absolute;
+  z-index: 1;
+}
+
+.i-right>:nth-child(1) {
+  transform: scale(0.69);
+  left: -15%;
+  top: -9%;
+}
+
+.i-right>:nth-child(2) {
+  top: -4.6rem;
+  transform: scale(0.67);
+  left: -3rem;
+}
+
+.i-right>:nth-child(3) {
+  transform: scale(1.4);
+  left: 28%;
+}
+
+
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(212px);
+  z-index: -9;
+  top: 18%;
+  left: 56%;
+  filter: blur(72px);
+}
 
 /* Common styles dark mode */
 
@@ -226,80 +269,179 @@ a {
   color: #f3f3f4;
 }
 
-/* Estilos para el banner destacado */
-.banner {
-  text-align: center;
-  padding: 50px 0;
-}
-
-.banner #logo {
-  width: 200px; /* Ajusta el tamaño del logo según tus necesidades */
-  animation: heartbeat 2s infinite; /* Animación del logo (ejemplo de latido) */
-}
-
-.banner h1 {
-  font-family: 'Roboto', sans-serif; /* Cambia la fuente según tus preferencias */
-  color: black; /* Color del texto */
-  font-size: 28px; /* Tamaño del texto */
-}
-
-/* Estilos para el contenido principal y otros elementos */
-/* Añade aquí los estilos para imágenes, testimonios, etc. */
-
-/* Animación del latido del logo */
-@keyframes heartbeat {
-  0% {
-      transform: scale(1);
-  }
-  50% {
-      transform: scale(1.2);
-  }
-  100% {
-      transform: scale(1);
-  }
-}
-
-
-.i-right{
-  flex: 1;
+/* Banner Gracias  */
+.responsive-banner {
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+  max-width: 100%;
+  min-width: 320px;
   position: relative;
+  min-height: 300px;
+  max-height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* background-image: linear-gradient(to bottom right, #D45BA1, #A784E0); */
+  background-image: linear-gradient(to bottom right, #f11826, #a4071d);
+
+  background-repeat: no-repeat;
+  text-align: left;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.i-right>*{
+
+.container-envelope {
+  max-width: calc(100%);
+  padding: 15px;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 300px;
+  max-height: 450px;
+}
+
+.col-xs-12 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  margin-left: 25rem;
+  flex: 0 0 100%;
+  max-width: 100%;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+@media (min-width: 650px) {
+  .col-xs-12 {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  .container-envelope {
+    max-width: calc(100% - 200px);
+  }
+}
+
+
+.more-link {
+  background-color: rgba(255, 255, 255, 0.35);
+  display: inline-block;
+  padding: 12px 18px;
+  color: #fff;
+  text-decoration: none;
+  font: 500 15px 'Work Sans', Helvetica, sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  border: none !important;
+  position: relative;
+  border-radius: 30px;
+  text-transform: uppercase;
+  -webkit-transition: .1s all ease-in-out;
+  -moz-transition: .1s all ease-in-out;
+  -o-transition: .1s all ease-in-out;
+  transition: .1s all ease-in-out;
+}
+
+.more-link:hover {
+  background-color: rgba(255, 255, 255, 0.50);
+}
+
+svg,
+.img {
+  fill: rgba(0, 0, 0, 0.1);
   position: absolute;
-  z-index: 1;
 }
 
-.i-right>:nth-child(1)
-{
-  transform: scale(0.69);
-  left: -15%;
-  top: -9%;
+.imagen {
+  clip-path: circle(50% at 50% 50%);
+  max-width: 30%;
 }
 
-.i-right>:nth-child(2){
-  top: -4.6rem;
-  transform: scale(0.67);
-  left: -3rem;
+.cirle-a {
+  bottom: -80px;
+  left: -80px;
 }
 
-.i-right>:nth-child(3){
-  transform: scale(1.4);
-  left: 28%;
+.cirle-b {
+  top: -30px;
+  right: 70%;
+}
+
+.cirle-c {
+  top: -330px;
+  right: -300px;
+}
+
+.cirle-d {
+  top: 195px;
+  right: 145px;
+}
+
+.img {
+  top: 0;
+  right: 0;
+}
+
+
+.link-container {
+  text-align: center;
+}
+
+.link-container a.more-link {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  background-color: #90b0bf;
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/*NUESTRAS EXPERIENCIAS*/
+img {
+  background-size: cover;
+  object-fit: cover;
 }
 
 
 
-.blur{
-  position: absolute;
-  width: 22rem;
-  height: 14rem;
-  border-radius: 50%;
-  background: #edd0ff;
-  filter: blur(212px);
-  z-index: -9;
-  top: 18%;
-  left: 56%;
-  filter: blur(72px);
+
+img#logo {
+  width: 200px;
+  /* Ajusta el tamaño del logotipo según sea necesario */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Efecto de animación */
+@keyframes fadeInOut {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.banner-enter-active,
+.banner-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.banner-enter-from,
+.banner-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}

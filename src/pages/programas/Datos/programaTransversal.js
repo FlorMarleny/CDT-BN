@@ -7,7 +7,8 @@ export const programaTransversal = {
       nombre: "AutoCAD 2D",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Representación e interpretación de dibujos técnicos, eléctricos y electrónicos; normas, laboratorio CAD; sesiones teóricas y prácticas calificadas.",
+        "Dibujos técnicos eléctricos y electrónicos, normas, CAD, sesiones calificadas.",
+
       modalidad: "Virtual",
       gratis: true,
     },
@@ -16,7 +17,7 @@ export const programaTransversal = {
       nombre: "AutoCAD 3D",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Diseños mecánicos, eléctricos y electrónicos, planos 3D, Modelado Arquitectónico 3D con Fotorrealismo y Renderizado. Sesiones teóricas y prácticas.",
+        "Diseños mecánicos, eléctricos y electrónicos. Planos 3D. Modelado Arquitectónico.",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -25,7 +26,7 @@ export const programaTransversal = {
       nombre: "Computación Básica",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Uso de dispositivos y programas en actividades computarizadas. Simulador para reconocer y ensamblar computadoras. Sistema operativo, organización y Microsoft Word.",
+        "Uso dispositivos y programas. Simulador ensamble computadoras. Sistema operativo, Microsoft Word.",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -34,7 +35,7 @@ export const programaTransversal = {
       nombre: "Diseño 3D conTinkerCAD",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Taller creativo de diseño 3D para niños y adolescentes con Tinkercad: fomenta participación y creatividad.",
+        "Taller creativo diseño 3D niños y adolescentes. Tinkercad: participación, creatividad.",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -43,7 +44,7 @@ export const programaTransversal = {
       nombre: "Diseño gráfico con Photoshop",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Curso diseño gráfico con Photoshop: adquiere habilidades, crea diseños atractivos, técnicas avanzadas y retoca fotos.",
+        "Curso diseño gráfico con Photoshop: habilidades, diseños atractivos, técnicas avanzadas.",
       modalidad: "Presencial",
       gratis: true,
     },
@@ -52,7 +53,7 @@ export const programaTransversal = {
       nombre: "Excel Avanzado con Macros",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Curso de macros en Excel: automatización de tareas, ahorro de tiempo y herramientas avanzadas para control de información.",
+        "Curso macros Excel: automatización, ahorro tiempo, herramientas avanzadas, control información.",
       modalidad: "Presencial",
       gratis: true,
     },
@@ -61,7 +62,7 @@ export const programaTransversal = {
       nombre: "Excel Básico",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Curso Excel: crear hojas, formatos, fórmulas, funciones básicas y reportes gráficos para resolver problemas comunes.",
+        "Curso Excel: hojas, formatos, fórmulas, funciones básicas, reportes gráficos.",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -70,7 +71,7 @@ export const programaTransversal = {
       nombre: "Excel para Profesionales",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Curso Excel: manejo, análisis y presentación de información con fórmulas y tablas dinámicas para informes profesionales.",
+        "Curso Excel: manejo, análisis, presentación con fórmulas, tablas dinámicas.",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -79,7 +80,7 @@ export const programaTransversal = {
       nombre: "Gestión de Proyectos con MS Project",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Curso eficiente de MS Project: planificación, programación y control de proyectos para empresas y organizaciones.",
+        "Curso eficiente MS Project: planificación, programación, control proyectos empresas.",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -88,7 +89,7 @@ export const programaTransversal = {
       nombre: "Manejo de Aplicaciones de Google",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Curso Google Workspace: productividad, comunicación y trabajo en equipo con herramientas indispensables para organizaciones.",
+        "Curso Google Workspace: productividad, comunicación, trabajo en equipo herramientas indispensables.",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -97,7 +98,7 @@ export const programaTransversal = {
       nombre: "Marketing Digital con Redes Sociales",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Curso de campañas publicitarias en redes sociales para emprendedores: posicionamiento, ventas y atraer clientes efectivamente.",
+        "Curso campañas publicitarias en redes sociales: posicionamiento, ventas, atraer clientes.",
       modalidad: "Presencial",
       gratis: true,
     },
@@ -106,7 +107,7 @@ export const programaTransversal = {
       nombre: "Programación con Scratch",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Aprende programación fácil y práctica: ejercicios motivadores, solución de problemas y pensamiento crítico.",
+        "Aprende programación fácil y práctica: ejercicios motivadores, solución problemas, pensamiento crítico.",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -115,7 +116,7 @@ export const programaTransversal = {
       nombre: "Robótica con Arduino",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Construye y programa robots con Arduino, descubre hardware abierto y principios de robótica.",
+        "Construye y programa robots con Arduino: hardware abierto, robótica.",
       modalidad: "Presencial",
       gratis: true,
     },
@@ -124,7 +125,7 @@ export const programaTransversal = {
       nombre: "Word Básico",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Curso MS Word: herramientas básicas e intermedias para elaborar informes y presentaciones eficientes, con sesiones teóricas y prácticas calificadas.",
+        "Curso MS Word: herramientas básicas e intermedias para informes, presentaciones. Sesiones teóricas y prácticas calificadas.",
       modalidad: "Presencial",
       gratis: true,
     },
@@ -133,7 +134,7 @@ export const programaTransversal = {
       nombre: "Word Empresarial",
       imagen: "src/img/imagenP.jpg",
       texto:
-        "Curso avanzado de MS Word: herramientas intermedias y avanzadas para tratamiento de información y manejo de documentos.",
+        "Curso avanzado MS Word: herramientas intermedias y avanzadas tratamiento información, manejo documentos.",
       modalidad: "Presencial",
       gratis: true,
     },

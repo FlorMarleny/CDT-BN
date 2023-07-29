@@ -1,0 +1,16 @@
+/* Programas.css */
+
+.btn-group-vertical {
+    position: sticky;
+    top: 200px; /* Ajusta el valor para la distancia desde la parte superior */
+  }
+  
+  .program-button {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 10px;
+  }
+  
+  .program-button.active {
+    background-color: #901ee8a4;
+  }

@@ -5,7 +5,7 @@ import CDTLogo from "../../img/CDT.png";
 import CDTLogoDark from "../../img/CDT-light.png";
 import '../../App.css';
 import { FaSun, FaMoon } from "react-icons/fa";
-import { useDarkMode } from "../../DarkModeContext"; // Import the useDarkMode hook
+import { useDarkMode } from "../../DarkModeContext"; 
 import "./Menu.css";
 
 const Menu = () => {

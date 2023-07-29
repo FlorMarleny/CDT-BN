@@ -7,7 +7,7 @@ export const programaPerfil = {
       nombre: "Diseño y Desarrollo de Emprendimientos",
       imagen: "src/img/imagenCursos.jpg",
       texto:
-        "Programa de Emprendimiento: fomenta creatividad, valores y creación de empresas para crecimiento local y regional.",
+        "Programa Emprendimiento: creatividad, valores, creación empresas, crecimiento local y regional.",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -16,7 +16,7 @@ export const programaPerfil = {
       nombre: "Ofimática Profesional",
       imagen: "src/img/imagenCursos.jpg",
       texto:
-        "Especialista en Ofimática Profesional: dominio herramientas Microsoft Word, Excel y PowerPoint (versión 2019) para incrementar productividad y colaboración.",
+        "Especialista Ofimática Profesional: dominio Word, Excel, PowerPoint (versión 2019). Incrementa productividad, colaboración.",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -25,7 +25,7 @@ export const programaPerfil = {
       nombre: "Implementación del sistema de gestión de SST",
       imagen: "src/img/imagenCursos.jpg",
       texto:
-        "Programa de Seguridad y Salud en el Trabajo: desarrolla competencias para implementar sistemas de gestión.",
+        "Programa Seguridad y Salud en el Trabajo: implementación sistemas gestión.",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -34,7 +34,7 @@ export const programaPerfil = {
       nombre: "Power BI ",
       imagen: "src/img/imagenCursos.jpg",
       texto:
-        "Inteligencia Empresarial: bases de datos sólidas y herramientas analíticas para tomar decisiones estratégicas informadas.",
+        "Inteligencia Empresarial: bases de datos, herramientas analíticas, decisiones estratégicas.",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -43,7 +43,7 @@ export const programaPerfil = {
       nombre: "Diseño Publicitario con Adobe Illustrator ",
       imagen: "src/img/imagenCursos.jpg",
       texto:
-        "Curso Diseño Publicitario: habilidades en Adobe Illustrator, creación de diseños impactantes y gestión de proyectos publicitarios.",
+        "Curso Diseño Publicitario: habilidades Adobe Illustrator, diseños impactantes, gestión proyectos.",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -52,7 +52,7 @@ export const programaPerfil = {
       nombre: "Marketing Digital ",
       imagen: "src/img/imagenCursos.jpg",
       texto:
-        "Proyecto Integrador de Marketing Digital: estrategias con tendencias digitales, innovación y emprendimiento para Gestión de Proyectos.",
+        "Proyecto Integrador Marketing Digital: estrategias, tendencias digitales, innovación, emprendimiento.",
       modalidad: "Virtual",
       gratis: true,
     },

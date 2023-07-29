@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { programaTransversal } from "./Datos/programaTransversal";
 import { programaPerfil } from "./Datos/programaPerfil";
@@ -13,8 +13,9 @@ const Programas = () => {
     programaTransversal,
     programaPerfil,
     programaEducar,
-    programaOficio,
     programaDojo,
+    programaOficio,
+    
   ];
   const [mouseOverCard, setMouseOverCard] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
@@ -34,6 +35,11 @@ const Programas = () => {
       setProgramaActivo(programaId);
     }
   };
+
+  useEffect(() => {
+    // Al ingresar o actualizar la página, establecemos el programa activo a "Transversal"
+    setProgramaActivo(1); // El índice 1 representa el programa "Transversal"
+  }, []); 
 
   const columnsPerPage = 3;
   const rowsPerPage = 3;

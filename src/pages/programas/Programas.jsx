@@ -138,7 +138,7 @@ const Programas = () => {
         </div>
       </div>
 
-      {/* Resto del código para la paginación */}
+      {/* Paginación */}
       <div className="d-flex justify-content-center mt-4">
         <nav aria-label="Paginación">
           <ul className="pagination">

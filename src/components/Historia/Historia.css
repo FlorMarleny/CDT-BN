@@ -1,54 +1,43 @@
-/* General Styles */
-  p {
-    font-family: 'HelveticaNeue', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px; /* Slightly increase the font size */
-    line-height: 1.6; /* Add line-height for better readability */
-    text-align: justify;
-    color: #000000;
-  }
-  
-  span {
-    color: var(--black);
-  }
-  
-  /* Container Styles */
   section {
     padding: 2rem;
-    max-width: 1200px; /* Set a maximum width for the section */
-    margin: 0 auto; /* Center the section on the page */
+    max-width: 1200px;
+    /* Set a maximum width for the section */
+    margin: 0 auto;
+    /* Center the section on the page */
   }
-  
+
   .d-grid {
-    display: grid; /* Use CSS Grid for better responsiveness */
-    gap: 4rem; /* Reduce the gap between grid items */
-    grid-template-columns: 1fr 1fr; /* Two columns layout for desktop */
+    display: grid;
+    /* Use CSS Grid for better responsiveness */
+    gap: 4rem;
+    /* Reduce the gap between grid items */
+    grid-template-columns: 1fr 1fr;
+    /* Two columns layout for desktop */
   }
-  .bg-gris{
+
+  .bg-gris {
     background-color: #f7f7f7;
     padding: 1.5rem;
   }
+
   .imagenHistoria {
     max-width: 100%;
     height: auto;
-    background-size: cover;
-    object-fit: cover; /* Use object-fit for image sizing */
   }
-  
+
   /* Add media query for smaller screens (e.g., tablets and mobiles) */
   @media (max-width: 768px) {
     section {
       padding: 1rem;
     }
-  
+
     .d-grid {
-      grid-template-columns: 1fr; /* Change to a single column layout for mobile */
+      grid-template-columns: 1fr;
+      /* Change to a single column layout for mobile */
       gap: 0rem;
     }
-  
+
     .imagenHistoria {
       margin-top: 0rem;
     }
   }
-  

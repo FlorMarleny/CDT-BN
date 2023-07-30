@@ -1,3 +1,7 @@
+.curved-line {
+  margin-top: 30px;
+}
+
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajusta los valores según sea necesario */
 }
@@ -22,7 +26,7 @@
   top: 10px;
   left: 10px;
   background-color: rgba(151, 141, 47, 0.6);
-  color: white;
+  color: var(--white-color);
   padding: 4px 8px;
   border-radius: 4px;
   font-weight: bold;

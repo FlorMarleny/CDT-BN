@@ -3,35 +3,31 @@
   font-weight: 400;
   font-style: normal;
   font-size: 72px;
-  color: #00233f;
+  color: var(--titulo-color);
   font-stretch: 100%;
-
-  /* Neumorphic effect */
+  /* Efecto neumorfico */
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.6);
   border-radius: 16px;
-  /* Optional: Add some rounded corners to soften the effect */
+  /* Para crear una apariencia 3D */
   padding-top: 8px;
   padding-bottom: 8px;
   padding-right: 8px;
-  /* Optional: Add some padding to create a 3D look */
-
 }
 
-/* Define a keyframe animation for the professional effect */
+.resaltar {
+  color: var(--resaltar-color);
+}
+
+/* Una animación de fotogramas*/
 @keyframes professionalEffect {
   0% {
     color: #f02a22;
-    /* Start with black color */
   }
-
   50% {
     color: #d50000;
-    /* Change to dark blue (#1a1a1a) color at 50% of the animation */
   }
-
   100% {
     color: #f02a22;
-    /* Go back to black color at the end of the animation */
   }
 }
 
@@ -39,26 +35,20 @@
 .text-gratuito {
   font-weight: 900;
   animation: professionalEffect 2s infinite;
-  /* Set the animation duration and repeat infinitely */
-
-}
-
-.resaltar {
-  color: #fc9a13;
 }
 
 u {
-  color: #007bff;
+  color: var(--enlace-color);
 }
 
-a {
+.learnmore {
   font-family: "HelveticaNeue", sans-serif;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
   text-transform: none;
   text-decoration: none solid rgb(255, 255, 255);
-  color: #007bff;
+  color: var(--enlace-color);
   cursor: "pointer";
   font-stretch: 100%;
 }
@@ -69,6 +59,7 @@ a {
   margin-bottom: 20px;
 }
 
+/* Programas de perfil, cursos, programas de oficio */
 .header-container {
   position: relative;
   overflow: hidden;
@@ -78,7 +69,6 @@ a {
 }
 
 .header-image {
-  object-fit: cover;
   height: 100%;
   width: 100%;
   filter: brightness(50%);
@@ -90,7 +80,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--white-color);
   font-size: 24px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
@@ -99,7 +89,7 @@ a {
 .testimonial-container {
   padding: 10px;
   margin-bottom: 20px;
-  background-color: #f6f6f6;
+  background-color: var(--white-color);;
   margin-right: 25px;
   margin-left: 25px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -123,7 +113,7 @@ a {
 }
 
 .user-rating span {
-  color: #FFC619;
+  color: var(--estrella-color);
 }
 
 .user-rating {
@@ -140,7 +130,7 @@ a {
   font-weight: bold;
   margin: 10px 0;
   text-align: center;
-  color: #DF040C;
+  color: var(--username-color);
 }
 
 .slick-prev,
@@ -216,32 +206,24 @@ a {
   filter: blur(72px);
 }
 
-/* Common styles dark mode */
+/* Modo oscuro*/
 
-/* Define a keyframe animation for the professional effect */
+/* Definir una animación de fotograma */
 @keyframes darkprofessionalEffect {
   0% {
     color: yellow;
-    /* Start with black color */
   }
-
   50% {
     color: #eeff41;
   }
-
   100% {
     color: yellow;
-    /* Go back to black color at the end of the animation */
   }
 }
 
-/* Apply the animation to the .resaltar class */
 .dark-mode-content .resaltar {
   animation: darkprofessionalEffect 2s infinite;
-  /* Set the animation duration and repeat infinitely */
-
 }
-
 
 .dark-mode-content h1 {
   color: #fcfdfd;
@@ -251,10 +233,12 @@ a {
   color: #c6cdd2;
 }
 
-
-
 .dark-mode-content p {
   color: #c0bfba;
+}
+
+.dark-mode-content .user-rating span {
+  color: var(--estrella-color);
 }
 
 .dark-mode-content .user-opinion {
@@ -391,7 +375,7 @@ svg,
   text-align: center;
 }
 
-.link-container a.more-link {
+.link-container .more-link {
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
   background-color: #90b0bf;
   color: #fff;
@@ -405,18 +389,9 @@ svg,
   letter-spacing: 1px;
 }
 
-/*NUESTRAS EXPERIENCIAS*/
-img {
-  background-size: cover;
-  object-fit: cover;
-}
 
-
-
-
-img#logo {
+img #logo {
   width: 200px;
-  /* Ajusta el tamaño del logotipo según sea necesario */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 

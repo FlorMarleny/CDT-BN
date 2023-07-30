@@ -2,25 +2,30 @@
   max-width: auto;
   margin: 0 auto;
   padding: 0%;
-  /* text-align: center; */
 }
 
-/* styles.css or your global CSS file */
+/* Nuestras variables */
 :root {
-  --primary-color: #007bff;
-  /* Define the default color for light mode */
+  /* Colores predeterminados para el modo normal */
+  --titulo-color: #00233f;
+  --resaltar-color: #fc9a13;
+  --parrafo-color: #000000;
   --background-color: #f8f9fa;
-  /* Define the default background color for light mode */
+  --subtitulo-color: #484848;
+  --enlace-color: #007bff;
+  --estrella-color: #FFC619;
+  --white-color: #ffffff;
+  /* Testimonios */
+  --username-color: #DF040C;
+  --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  /* Colores predeterminados para el modo oscuro */
+  --darkbackground-color: #111b22;
+
 }
 
 body {
-  background-color: #f7f8f8;
-}
-
-/* Add styles for the dark-mode body */
-.dark-mode-body {
-  background-color: #111b22;
-  /* You can set your desired background color for dark mode here */
+  background-color: var(--background-color);
 }
 
 .card {
@@ -32,16 +37,38 @@ body {
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
-  color: #484848;
+  font-family: "HelveticaNeue", sans-serif;
   font-weight: bold;
   font-size: 22px;
   text-transform: uppercase;
+  font-stretch: 100%;
+  font-style: normal;
+  text-decoration: none solid rgb(0, 0, 0);
   text-shadow: 1px 1px #e0e0e0;
 }
 
 h2 > span {
-  color: #484848;
-  /* Black color for the span text */
-  /* text-shadow: 1px 2px 1px yellow;  Propiedad para agregar sombra amarilla */
+  color: var(--subtitulo-color);
 }
+
+p {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px; 
+  line-height: 1.6; 
+  text-align: justify;
+  color: var(--parrafo-color);
+}
+
+img{
+  background-size: cover;
+  object-fit: cover;
+}
+
+
+/* Estilos para el modo oscuro del body*/
+.dark-mode-body {
+  background-color: var(--darkbackground-color);
+}
+

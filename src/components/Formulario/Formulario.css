@@ -8,7 +8,7 @@
   }
   
   h2 {
-    color: #007bff;
+    color: var(--enlace-color);
   }
 
   .title-form{

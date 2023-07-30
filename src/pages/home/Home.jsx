@@ -25,7 +25,8 @@ import userImage1 from "../../img/imagenCursos.jpg";
 import Vector1 from '../../img/Vector1.png';
 import Vector2 from '../../img/Vector2.png';
 import boy from '../../img/boy.png';
-import thumbup from '../../img/thumbup.png';
+// import thumbup from '../../img/thumbup.png';
+import thumbup from '../../img/courses.png';
 import Crown from '../../img/crown.png';
 import glassesimoji from '../../img/glassesimoji.png';
 import FloatingDiv from '../../components/FloatingDiv/FloatingDiv';
@@ -138,12 +139,9 @@ const Home = () => {
 
   return (
     <div className={`home-container ${isDarkMode ? "dark-mode" : "light-mode"}`}>
-
-
       <Helmet>
         <title>Inicio</title>
       </Helmet>
-
       <div className={`row mb-5 ${isDarkMode ? "dark-mode-content" : "light-mode-content"}`}>
         <div className="col-md-6">
           <h1 className="display-1 fw-bold title">
@@ -175,7 +173,7 @@ const Home = () => {
           </div>
 
           {/* Enlace "APRENDE MÁS" */}
-          <u><a
+          <u><a className="learnmore"
             href="#"
           >
             Aprende más
@@ -184,21 +182,21 @@ const Home = () => {
 
         <div className="col-md-6 mt-5">
           {/* <img
-            src={portada}
+            src={portada} boy
             alt="Imagen 1"
             style={{ maxWidth: "100%", height: "auto" }}
           /> */}
 
-          <div className="i-right">
+          <div className="i-right col-md-6">
             <img src={Vector1} alt="" />
             <img src={Vector2} alt="" />
-            <img src={boy} alt="" />
+            <img src={portada} alt="" style={{ maxWidth: "100%", height: "auto" }} />
 
-            <div style={{ top: '-6%', left: '68%' }}>
+            <div style={{ top: '0rem', left: '100%' }}>
               <FloatingDiv image={Crown} txt1='Web' txt2='Developer' />
             </div>
-            <div style={{ top: '22.5rem', left: '0rem' }}>
-              <FloatingDiv image={thumbup} txt1='Best Design' txt2='Award' />
+            <div style={{ top: '8rem', left: '0rem' }}>
+              <FloatingDiv image={thumbup} txt1='Cursos' txt2='100 000+' />
             </div>
 
             {/* Blur divs */}
@@ -219,14 +217,7 @@ const Home = () => {
 
         </div>
 
-
-
-
-
-
-
       </div>
-
       {/* imágenes */}
       <div className={`row mb-5 ${isDarkMode ? "dark-mode-content" : "light-mode-content"}`}>
         <div className="col-md-4">
@@ -314,7 +305,7 @@ const Home = () => {
           <div className="col-xs-12">
             <img src={empresa} alt="Logo de la Empresa" id="logo" />
             <p className="" >Gracias a <strong>Cementos Pacasmayo</strong> S.A.A.</p>
-            <a className="a more-link" target="_blank" href="https://www.cementospacasmayo.com.pe/">Ven a visitarnos</a>
+            <a className="more-link" target="_blank" href="https://www.cementospacasmayo.com.pe/">Ven a visitarnos</a>
           </div>
         </div>
       </aside>
@@ -337,7 +328,7 @@ const Home = () => {
         </Row>
       </Container>
 
-     <Footer /> 
+      <Footer />
 
 
 

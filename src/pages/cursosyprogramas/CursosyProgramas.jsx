@@ -1,12 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Menu from "../../components/Navbar/Menu";
 import "./CursosyProgramas.css";
 import { programaTransversal } from "./Datos/programaTransversal";
 import { programaPerfil } from "./Datos/programaPerfil";
 import { programaEducar } from "./Datos/programaEducar";
 import { programaDojo } from "./Datos/programaDojo";
 import { programaOficio } from "./Datos/programaOficio";
+import linea from '../../img/Vector 3.png'
 import imagenInfo from "../../img/imagenInfo.png";
 import { FaChalkboardTeacher, FaUserFriends, FaTable } from "react-icons/fa";
 
@@ -21,12 +21,10 @@ const CursosyProgramas = () => {
 
   return (
     <div>
-      
       <Helmet>
         <title>Cursos y Programas</title>
       </Helmet>
-
-      <div className="container">
+      <div>
         <div
           style={{
             textAlign: "center",
@@ -36,7 +34,9 @@ const CursosyProgramas = () => {
             justifyContent: "center",
           }}
         >
-          <h3 style={{ fontSize: "32px", fontWeight: "bold" }}>PROGRAMAS</h3>
+          <h2>PROG<span className="span">RAMAS</span></h2>
+          <img class="curved-line" src={linea} alt="Línea curvada"/>
+          {/* <h3 style={{ fontSize: "32px", fontWeight: "bold" }}>PROGRAMAS</h3> */}
           {/* <hr style={{ width: "20%", border: "1px solid black", marginLeft: "10px" }} /> */}
         </div>
 
@@ -112,7 +112,7 @@ const CursosyProgramas = () => {
             justifyContent: "center",
           }}
         >
-          <h3 style={{ fontSize: "32px", fontWeight: "bold" }}>CURSOS</h3>
+          <h2>CUR<span>SOS</span></h2>
         </div>
 
         {/* INFORMACIÓN */}

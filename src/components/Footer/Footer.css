@@ -1,0 +1,36 @@
+.body {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    overflow-x: hidden;
+    color: #607289;
+}
+
+.logo{
+    width: 200px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+h5 {
+    font-size: 14px;
+    font-family: "HelveticaNeue", sans-serif;
+    font-weight: bold;
+    color: #00233F;
+}
+
+.a {
+    color: #818494;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer {
+    background: white;
+}

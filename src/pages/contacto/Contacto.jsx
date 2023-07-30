@@ -124,7 +124,7 @@ const Contacto = () => {
         </div>
       </div>
 
-      {/* <Footer />  */}
+      <Footer/>
 
     </div>
 

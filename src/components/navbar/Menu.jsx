@@ -89,18 +89,18 @@ const Menu = () => {
                 Contacto
               </Link>
             </li>
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <button className={`nav-link ${isDarkMode ? "text-light" : "text-dark"}`} onClick={toggleDropdown}>
                 Académico
               </button>
               {isDropdownOpen && (
                 <ul className={`dropdown-menu ${isDarkMode ? "dropdown-menu-dark" : ""}`} onClick={closeDropdown}>
-                  {/* Aquí puedes agregar los elementos del menú desplegable */}
+                  
                   <li className="dropdown-item">Biblioteca virtual</li>
                   <li className="dropdown-item">Sistema de Administración</li>
                 </ul>
               )}
-            </li>
+            </li> */}
             <li className="nav-item">
               {/* Dark mode toggle button with icons */}
               <button className={`nav-link ${isDarkMode ? "text-light" : "text-dark"}`} onClick={toggleDarkMode}>

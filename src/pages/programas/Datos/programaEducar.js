@@ -5,7 +5,7 @@ export const programaEducar = {
     {
       id: 1,
       nombre: "Programa Educar",
-      imagen: "src/img/imagenCursos.jpg",
+      imagen: "src/img/programa-educar.png",
       texto:
       "Fortalecer competencias digitales docentes: TIC, estrategias didácticas, motivar participación activa.",      modalidad: "Síncrona",
       gratis: true,

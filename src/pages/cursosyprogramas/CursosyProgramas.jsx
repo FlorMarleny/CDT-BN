@@ -9,6 +9,7 @@ import { programaOficio } from "./Datos/programaOficio";
 import linea from '../../img/Vector 3.png'
 import imagenInfo from "../../img/imagenInfo.png";
 import { FaChalkboardTeacher, FaUserFriends, FaTable } from "react-icons/fa";
+import Footer from "../../components/Footer/Footer";
 
 const CursosyProgramas = () => {
   const programas = [
@@ -44,7 +45,7 @@ const CursosyProgramas = () => {
         <div className="card-container row justify-content-center">
           <div className="row">
             <a
-              href="/Programas"
+              href="/todos-los-programas"
               style={{ textDecoration: "none", textAlign: "right" }}
             >
               Ver todos los programas
@@ -90,7 +91,7 @@ const CursosyProgramas = () => {
                         </p>
                         <div className="d-flex justify-content-between align-items-center mb-3">
                           <button className="btn btn-dark button-ver-mas">
-                            VER MÁS
+                            Ver más
                           </button>
                         </div>
                       </div>
@@ -154,7 +155,12 @@ const CursosyProgramas = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
+
     </div>
+
+    
   );
 };
 

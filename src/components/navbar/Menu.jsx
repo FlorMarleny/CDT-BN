@@ -11,7 +11,6 @@ import "./Menu.css";
 const Menu = () => {
   const location = useLocation();
   const { isDarkMode, setIsDarkMode } = useDarkMode();
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen((prevState) => !prevState);

@@ -198,7 +198,7 @@ u {
   width: 22rem;
   height: 14rem;
   border-radius: 50%;
-  background: #edd0ff;
+  background: var(--white-color);
   filter: blur(212px);
   z-index: -9;
   top: 18%;

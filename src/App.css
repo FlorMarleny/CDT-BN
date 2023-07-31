@@ -10,11 +10,15 @@
   --titulo-color: #00233f;
   --resaltar-color: #fc9a13;
   --parrafo-color: #000000;
-  --background-color: #f8f9fa;
+  --background-color: #f6f9fa;
   --subtitulo-color: #484848;
   --enlace-color: #007bff;
   --estrella-color: #FFC619;
   --white-color: #ffffff;
+  --black-color: #000000;
+  --red-color: #ad1a24;
+  --naranja-color: #fc9a13;
+  --azulmarino-color: #00233f;
   /* Testimonios */
   --username-color: #DF040C;
   --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);

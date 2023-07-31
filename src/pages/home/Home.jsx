@@ -200,11 +200,11 @@ const Home = () => {
             </div>
 
             {/* Blur divs */}
-            <div className="blur" style={{ background: "rgba(238 210 255)" }}>
+            <div className="blur" style={{ background: "#ffffff" }}>
             </div>
             <div className="blur"
               style={{
-                background: '#c1f5ff',
+                background: '#ffffff',
                 top: '17rem',
                 width: '21rem',
                 height: '11rem',

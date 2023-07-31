@@ -22,9 +22,9 @@ import collage4 from "../../img/collage4.jpg";
 import userImage1 from "../../img/imagenCursos.jpg";
 
 
-import Vector1 from '../../img/Vector1.png';
-import Vector2 from '../../img/Vector2.png';
-import boy from '../../img/boy.png';
+// import Vector1 from '../../img/Vector1.png';
+// import Vector2 from '../../img/Vector2.png';
+// import boy from '../../img/boy.png';
 // import thumbup from '../../img/thumbup.png';
 import thumbup from '../../img/courses.png';
 import Crown from '../../img/crown.png';
@@ -181,43 +181,59 @@ const Home = () => {
         </div>
 
         <div className="col-md-6 mt-5">
-          {/* <img
-            src={portada} boy
-            alt="Imagen 1"
-            style={{ maxWidth: "100%", height: "auto" }}
-          /> */}
-
-          <div className="i-right col-md-6">
-            <img src={Vector1} alt="" />
-            <img src={Vector2} alt="" />
-            <img src={portada} alt="" style={{ maxWidth: "100%", height: "auto" }} />
-
-            <div style={{ top: '0rem', left: '100%' }}>
-              <FloatingDiv image={Crown} txt1='Web' txt2='Developer' />
+          <div className="fondo">
+            <div className="i-right col-md-6">
+              <img src={portada} alt="" style={{ maxWidth: "100%", height: "auto", marginTop: "5rem" }} />
+              <div style={{ top: '0rem', left: '100%' }}>
+                
+              </div>
+              <div style={{ top: '13rem', left: '3rem' }}>
+                <FloatingDiv image={thumbup} txt1='Cursos' txt2='100,000+' />
+              </div>
+              {/* Blur divs */}
+              <div className="blur" style={{ background: "#ffffff" }}></div>
+              <div
+                className="blur"
+                style={{
+                  background: '#ffffff',
+                  top: '17rem',
+                  width: '21rem',
+                  height: '11rem',
+                  left: '-9rem',
+                }}
+              ></div>
             </div>
-            <div style={{ top: '8rem', left: '0rem' }}>
-              <FloatingDiv image={thumbup} txt1='Cursos' txt2='100 000+' />
-            </div>
-
-            {/* Blur divs */}
-            <div className="blur" style={{ background: "#ffffff" }}>
-            </div>
-            <div className="blur"
+            {/* Agregar fondo debajo de la imagen */}
+            <div
+              className="background-div"
               style={{
-                background: '#ffffff',
-                top: '17rem',
-                width: '21rem',
-                height: '11rem',
-                left: '-9rem',
-              }}>
-
-            </div>
-
+                position: 'absolute',
+                top: '18rem',
+                left: '7rem',
+                width: '80%',
+                height: '168px', // Ajusta esta altura según tus necesidades
+                background: '#FFCDD2', // Gradiente de color de fondo
+              }}
+            ></div>
           </div>
-
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
+
       {/* imágenes */}
       <div className={`row mb-5 ${isDarkMode ? "dark-mode-content" : "light-mode-content"}`}>
         <div className="col-md-4">

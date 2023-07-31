@@ -1,5 +1,6 @@
 .curved-line {
-  margin-top: 30px;
+  margin-top: 35px;
+  margin-left: -5rem;
 }
 
 .card {
@@ -25,10 +26,10 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: rgba(151, 141, 47, 0.6);
+  background-color: rgba(252, 154, 19, 0.8);
   color: var(--white-color);
   padding: 4px 8px;
-  border-radius: 4px;
+  border-radius: 5px;
   font-weight: bold;
 }
 

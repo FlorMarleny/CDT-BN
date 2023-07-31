@@ -5,6 +5,7 @@ import { programaPerfil } from "./Datos/programaPerfil";
 import { programaEducar } from "./Datos/programaEducar";
 import { programaDojo } from "./Datos/programaDojo";
 import { programaOficio } from "./Datos/programaOficio";
+import Footer from '../../components/Footer/Footer';
 import "./Programas.css"; // Importar el archivo CSS
 
 const Programas = () => {
@@ -15,7 +16,7 @@ const Programas = () => {
     programaEducar,
     programaDojo,
     programaOficio,
-    
+
   ];
   const [mouseOverCard, setMouseOverCard] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
@@ -39,7 +40,7 @@ const Programas = () => {
   useEffect(() => {
     // Al ingresar o actualizar la página, establecemos el programa activo a "Transversal"
     setProgramaActivo(1); // El índice 1 representa el programa "Transversal"
-  }, []); 
+  }, []);
 
   const columnsPerPage = 3;
   const rowsPerPage = 3;
@@ -51,7 +52,7 @@ const Programas = () => {
   );
   const totalPages = Math.ceil(
     programas[programaActivo - 1]?.subprogramas.length /
-      (columnsPerPage * rowsPerPage)
+    (columnsPerPage * rowsPerPage)
   );
 
   const nextPage = () => {
@@ -79,9 +80,8 @@ const Programas = () => {
               {programas.map((programa) => (
                 <button
                   key={programa.id}
-                  className={`program-button btn btn-primary ${
-                    programaActivo === programa.id ? "active" : ""
-                  }`}
+                  className={`program-button btn btn-primary ${programaActivo === programa.id ? "active" : ""
+                    }`}
                   onClick={() => handleProgramaClick(programa.id)}
                 >
                   {programa.nombre}
@@ -105,9 +105,8 @@ const Programas = () => {
                       <img
                         src={subprograma.imagen}
                         alt={subprograma.nombre}
-                        className={`card-img-top  ${
-                          mouseOverCard === subIndex ? "img-darken" : ""
-                        }`}
+                        className={`card-img-top  ${mouseOverCard === subIndex ? "img-darken" : ""
+                          }`}
                       />
                       {mouseOverCard === subIndex && (
                         <p className="card-text mb-0 card-gratis-overlay">
@@ -156,9 +155,8 @@ const Programas = () => {
             {Array.from({ length: totalPages }).map((_, index) => (
               <li
                 key={index + 1}
-                className={`page-item ${
-                  currentPage === index + 1 ? "active" : ""
-                }`}
+                className={`page-item ${currentPage === index + 1 ? "active" : ""
+                  }`}
               >
                 <button
                   className="page-link"
@@ -169,9 +167,8 @@ const Programas = () => {
               </li>
             ))}
             <li
-              className={`page-item ${
-                currentPage === totalPages ? "disabled" : ""
-              }`}
+              className={`page-item ${currentPage === totalPages ? "disabled" : ""
+                }`}
             >
               <button className="page-link" onClick={nextPage}>
                 <span aria-hidden="true">&raquo;</span>
@@ -180,6 +177,10 @@ const Programas = () => {
           </ul>
         </nav>
       </div>
+
+      <Footer />
+
+
     </div>
   );
 };

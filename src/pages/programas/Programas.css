@@ -8,12 +8,42 @@
 .program-button {
   width: 100%;
   border-radius: 0;
+  background-color: var(--enlace-color);
+  border: var(--enlace-color);
   margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
 }
 
 .program-button.active {
-  background-color: #ec141ff2;
+  background-color: var(--resaltar-color);
+  border: var(--resaltar-color);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Efecto de carga utilizando una animación de transición */
+.program-button.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  100% {
+    left: 100%;
+  }
+}
+
+
+
 
 /* Estilos para la paginación */
 .pagination {

@@ -1,14 +1,21 @@
 import React from 'react'
 import './FloatingDiv.css'
+import thumbup from '../../img/courses.png';
 
-const FloatingDiv = ({image, txt1, txt2}) => {
+const FloatingDiv = () => {
   return (
     <div className="floatingdiv">
-        <img src={image} alt="" />
-        <span> 
-            {txt1}
-            <br/> <strong>{txt2} </strong> 
-        </span>
+      <div className="icon-with-text">
+        <div className="icon">
+          <img src={thumbup} />
+        </div>
+        <div className="text">
+          <span> Cursos <br/> <strong> 100+ </strong> </span>
+        </div>
+      </div>
+      <div className="centered-text">
+        Con certificado
+      </div>
     </div>
   )
 }

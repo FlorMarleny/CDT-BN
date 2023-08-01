@@ -36,7 +36,7 @@ const CursosyProgramas = () => {
           }}
         >
           <h2>PROG<span className="span">RAMAS</span></h2>
-          <img class="curved-line" src={linea} alt="Línea curvada"/>
+          {/* <img class="curved-line" src={linea} alt="Línea curvada"/> */}
         </div>
 
         {/* PROGRAMAS */}

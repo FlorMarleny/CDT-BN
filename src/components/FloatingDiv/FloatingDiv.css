@@ -1,6 +1,7 @@
-.floatingdiv{
+.floatingdiv {
     justify-content: space-around;
     display: flex;
+    flex-direction: column;
     background: var(--white-color);
     box-shadow: var(--boxShadow);
     border-radius: 11.27px;
@@ -10,12 +11,27 @@
     width: 182.48px;
 }
 
-.floatingdiv > img{
-    max-width: 30px;
-    
+.icon {
+    margin-right: 20px; /* Espacio entre el icono y el texto */
+  }
+
+.icon > img {
+    max-width: 40px;
 }
 
-.floatingdiv > span{
+.floatingdiv > span {
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
+}
+
+.icon-with-text {
+    display: flex;
+    align-items: center;
+}
+
+.centered-text {
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: var(--enlace-color);
 }

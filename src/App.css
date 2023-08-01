@@ -40,7 +40,19 @@ body {
   color: #888;
 }
 
+  /* Animations */
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.04);
+    }
+  }
+
+
 h2 {
+  animation: pulse 2s infinite alternate;
   font-family: "HelveticaNeue", sans-serif;
   font-weight: bold;
   font-size: 22px;

@@ -20,17 +20,13 @@ import collage2 from "../../img/collage2.jpg";
 import collage3 from "../../img/collage3.jpg";
 import collage4 from "../../img/collage4.jpg";
 import userImage1 from "../../img/imagenCursos.jpg";
-
-
-// import Vector1 from '../../img/Vector1.png';
-// import Vector2 from '../../img/Vector2.png';
-// import boy from '../../img/boy.png';
-// import thumbup from '../../img/thumbup.png';
-import thumbup from '../../img/courses.png';
-import Crown from '../../img/crown.png';
-import glassesimoji from '../../img/glassesimoji.png';
+import meta from '../../img/metas.png';
+import ahorro from '../../img/ahorro.png';
+import web from '../../img/web.png';
 import FloatingDiv from '../../components/FloatingDiv/FloatingDiv';
+
 import Footer from "../../components/Footer/Footer";
+
 
 
 const opiniones = [
@@ -184,11 +180,17 @@ const Home = () => {
           <div className="fondo">
             <div className="i-right col-md-6">
               <img src={portada} alt="" style={{ maxWidth: "100%", height: "auto", marginTop: "5rem" }} />
-              <div style={{ top: '0rem', left: '100%' }}>
+              <div style={{ top: '2.5rem', left: '6rem' }}>
+          
+              </div>
+              <div style={{ top: '2.5rem', left: '27.5rem' }}>
+              <img style={{ maxWidth: '120px', height: "auto" }} src={meta} />
+              </div>
+              <div style={{ top: '18.5rem', left: '24.5rem' }}>
                 
               </div>
               <div style={{ top: '13rem', left: '3rem' }}>
-                <FloatingDiv image={thumbup} txt1='Cursos' txt2='100,000+' />
+                <FloatingDiv />
               </div>
               {/* Blur divs */}
               <div className="blur" style={{ background: "#ffffff" }}></div>
@@ -212,7 +214,20 @@ const Home = () => {
                 left: '7rem',
                 width: '80%',
                 height: '168px', // Ajusta esta altura según tus necesidades
-                background: '#FFCDD2', // Gradiente de color de fondo
+                background: '#bbdefb', // Gradiente de color de fondo
+              }}
+            ></div>
+
+            <div
+              className="background-div"
+              style={{
+                position: 'absolute',
+                top: '17rem',
+                left: '1.75rem',
+                width: '48.01px',
+                height: '47.88px', // Ajusta esta altura según tus necesidades
+                background: '#2196f3', // Gradiente de color de fondo
+                borderRadius: '50%', // Hace que el fondo sea circular
               }}
             ></div>
           </div>

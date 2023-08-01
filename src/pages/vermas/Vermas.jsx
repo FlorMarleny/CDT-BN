@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 
 const Vermas = () => {
@@ -11,13 +12,15 @@ const Vermas = () => {
 
   return (
     <div className="container mt-4">
+      <Helmet>
+        <title>{subprograma.nombre}</title>
+      </Helmet>
       <div className="row">
         <div className="col-md-6">
           <h2>{subprograma.nombre}</h2>
           <p>{subprograma.texto}</p>
           <p>Modalidad: {subprograma.modalidad}</p>
-          <p>Horas Académicas: {subprograma.imagen}</p>
-          <p>{subprograma.horas}</p>
+          <p>Horas Académicas: {subprograma.horasAcademicas}</p>
           <h4>Descripción:</h4>
           <p>{subprograma.descripcion}</p>
         </div>

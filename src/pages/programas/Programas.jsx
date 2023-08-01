@@ -134,8 +134,9 @@ const Programas = () => {
                         {subprograma.texto}
                       </p>
                       <div className="d-flex justify-content-between align-items-center  mb-3">
+                      {/* Con esta ruta se ve la imagen */}
                         <Link
-                          to={`/vermas/${subprograma.id}`}
+                          to={`/${subprograma.id}`}
                           state={{ subprograma }}
                         >
                           <button className="btn btn-dark button-ver-mas">

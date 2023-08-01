@@ -10,7 +10,7 @@ export const programaTransversal = {
         "Dibujos técnicos eléctricos y electrónicos, normas, CAD, sesiones calificadas.",
       descripcion:
         "El curso comprende la representación e interpretación de dibujos mecánicos, eléctricos y electrónicos, planos sencillos de sistemas técnicos e industriales y  un proyecto de implementación de un laboratorio en CAD; aplicación de las normas y estándares de un dibujo técnico. Las sesiones teóricas se realizan en aula con exposición del docente ayudado con material audiovisual, hojas digitales de información tecnológica, separatas y hojas de trabajo digitales. Las sesiones prácticas calificadas en aula están orientadas a la aplicación de normas y estándares de dibujo técnico.",
-      horas: "32 Horas Academicas",
+      horasAcademicas: "32 Horas",
       Contenido1: "INTRODUCCIÓN: AUTOCAD 2D",
       Contenido2: "COMANDOS DE DIBUJO Y EDICIÓN I",
       Contenido3: "COMANDOS DE DIBUJO Y EDICIÓN II",

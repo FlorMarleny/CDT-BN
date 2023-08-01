@@ -1,8 +1,7 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import './Vermas.css';
+import "./Vermas.css";
+
 
 const Vermas = () => {
   const location = useLocation();
@@ -12,11 +11,14 @@ const Vermas = () => {
     return <div>Subprograma no encontrado</div>;
   }
 
+  const [activeTab, setActiveTab] = useState(null);
+
+  const handleTabClick = (index) => {
+    setActiveTab(index === activeTab ? null : index);
+  };
+
   return (
-    <div className="prueba container mt-4">
-      <Helmet>
-        <title>{subprograma.nombre}</title>
-      </Helmet>
+    <div className="container mt-4">
       <div className="row">
         <div className="col-md-6">
           <h2>{subprograma.nombre}</h2>
@@ -25,42 +27,39 @@ const Vermas = () => {
           <p>Horas Académicas: {subprograma.horasAcademicas}</p>
           <h4>Descripción:</h4>
           <p>{subprograma.descripcion}</p>
-
-
           <h4>Contenidos:</h4>
-          <Tabs className="Tabs">
-            <TabList className="TabList">
-              <Tab className="Tab">{subprograma.Contenido1}</Tab>
-              <Tab className="Tab">{subprograma.Contenido2}</Tab>
-              <Tab className="Tab">{subprograma.Contenido3}</Tab>
-              <Tab className="Tab">{subprograma.Contenido4}</Tab>
-              <Tab className="Tab">{subprograma.Contenido5}</Tab>
-              <Tab className="Tab">{subprograma.Contenido6}</Tab>
-              <Tab className="Tab">{subprograma.Contenido7}</Tab>
-            </TabList>
-
-            <TabPanel className="TabPanel" >
-              <p>{subprograma.Contenido1}</p>
-            </TabPanel>
-            <TabPanel className="TabPanel">
-              <p>{subprograma.Contenido2}</p>
-            </TabPanel>
-            <TabPanel className="TabPanel">
-              <p>{subprograma.Contenido3}</p>
-            </TabPanel>
-            <TabPanel className="TabPanel">
-              <p>{subprograma.Contenido4}</p>
-            </TabPanel>
-            <TabPanel className="TabPanel">
-              <p>{subprograma.Contenido5}</p>
-            </TabPanel>
-            <TabPanel className="TabPanel">
-              <p>{subprograma.Contenido6}</p>
-            </TabPanel>
-            <TabPanel className="TabPanel">
-              <p>{subprograma.Contenido7}</p>
-            </TabPanel>
-          </Tabs>
+          
+          <ul>
+            {subprograma.contenido1 && (
+              <li>
+                <button onClick={() => handleTabClick(1)}>
+                  {subprograma.contenido1[0]}
+                </button>
+                {activeTab === 1 && (
+                  <ul>
+                    {subprograma.contenido1[1].map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            )}
+            {subprograma.contenido2 && (
+              <li>
+                <button onClick={() => handleTabClick(2)}>
+                  {subprograma.contenido2[0]}
+                </button>
+                {activeTab === 2 && (
+                  <ul>
+                    {subprograma.contenido2[1].map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            )}
+            {/* Repite el patrón para los demás contenidos */}
+          </ul>
         </div>
 
         <div className="col-md-6 d-flex align-items-center justify-content-center">
@@ -70,7 +69,6 @@ const Vermas = () => {
             className="img-fluid"
           />
         </div>
-   
       </div>
     </div>
   );

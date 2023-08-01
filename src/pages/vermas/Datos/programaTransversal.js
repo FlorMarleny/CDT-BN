@@ -11,8 +11,19 @@ export const programaTransversal = {
       descripcion:
         "El curso comprende la representación e interpretación de dibujos mecánicos, eléctricos y electrónicos, planos sencillos de sistemas técnicos e industriales y  un proyecto de implementación de un laboratorio en CAD; aplicación de las normas y estándares de un dibujo técnico. Las sesiones teóricas se realizan en aula con exposición del docente ayudado con material audiovisual, hojas digitales de información tecnológica, separatas y hojas de trabajo digitales. Las sesiones prácticas calificadas en aula están orientadas a la aplicación de normas y estándares de dibujo técnico.",
       horasAcademicas: "32 Horas Academicas",
-      contenido1: "INTRODUCCIÓN: AUTOCAD 2D",
-      contenido2: "COMANDOS DE DIBUJO Y EDICIÓN I",
+
+      contenido1: [
+        "INTRODUCCIÓN: AUTOCAD 2D",
+        [
+          "Conceptos básicos de Espacio de Trabajo: Dibujo y Anotación",
+          "Elementos 3D Básicos",
+        ],
+      ],
+      contenido2: [
+        "COMANDOS DE DIBUJO Y EDICIÓN I",
+        ["Concepto 1", "Concepto 2", "Concepto 3"],
+      ],
+
       contenido3: "COMANDOS DE DIBUJO Y EDICIÓN II",
       contenido4: "COMANDOS DE DIBUJO Y EDICIÓN III",
       contenido5: "OBJETOS Y CAPAS - BLOQUES INTERNOS y EXTERNOS",

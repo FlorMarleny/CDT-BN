@@ -20,8 +20,6 @@ const Programas = () => {
     programaOficio,
   ];
 
-  const subprogramas = programas.flatMap((programa) => programa.subprogramas);
-
   const [mouseOverCard, setMouseOverCard] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
 

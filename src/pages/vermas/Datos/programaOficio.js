@@ -7,7 +7,8 @@ export const programaOficio = {
       nombre: "Construcción de Melamine",
       imagen: "src/img/ensamblado.png",
       texto:
-      "Ensamblado muebles: seguridad, normativa vigente, garantizar correcto montaje.",      modalidad: "Presencial",
+        "Ensamblado de muebles con seguridad y normativa vigente para garantizar el correcto montaje.",
+      modalidad: "Presencial",
       gratis: true,
     },
     {
@@ -15,7 +16,8 @@ export const programaOficio = {
       nombre: "Construcción de Drywall",
       imagen: "src/img/drywall.png",
       texto:
-      "Estructuras drywall: seguridad, normativa vigente, montaje adecuado.",      modalidad: "Presencial",
+        "Diversas estructuras en drywall: seguridad y normativa vigente para el montaje adecuado.",
+      modalidad: "Presencial",
       gratis: true,
     },
     {
@@ -23,7 +25,8 @@ export const programaOficio = {
       nombre: "Fabricación de Estructuras Metálicas",
       imagen: "src/img/estructuras-metalicas.png",
       texto:
-      "Curso soldadura: competencias fabricación y mantenimiento estructuras metálicas, enfoque práctico y teórico.",      modalidad: "Presencial",
+        "Curso de soldadura: potenciar competencias en fabricación y mantenimiento de estructuras metálicas con enfoque práctico y teórico.",
+      modalidad: "Presencial",
       gratis: true,
     },
   ],

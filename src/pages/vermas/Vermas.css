@@ -1,5 +1,6 @@
 /* styles.css */
 /* Estilos para los componentes Tabs y TabList */
+
 .Tabs {
     display: flex;
     flex-direction: column;

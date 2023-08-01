@@ -325,7 +325,7 @@ u {
   padding: 12px 18px;
   color: #fff;
   text-decoration: none;
-  font: 500 15px 'Work Sans', Helvetica, sans-serif;
+  font: 500 15px 'HelveticaNeue', sans-serif;
   line-height: 1.5;
   text-align: center;
   border: none !important;
@@ -384,7 +384,7 @@ svg,
 }
 
 .link-container .more-link {
-  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-family: 'HelveticaNeue',  sans-serif;
   background-color: #90b0bf;
   color: #fff;
   display: inline-block;
@@ -428,3 +428,13 @@ svg,
   opacity: 0;
   transform: translateY(-10px);
 }
+
+/* Add media query for smaller screens (e.g., tablets and mobiles) */
+@media (max-width: 768px) {
+  .portada {
+     max-height: calc(118.7vh - 30rem); /* Ajusta la altura máxima según tus necesidades */
+  }
+
+
+}
+

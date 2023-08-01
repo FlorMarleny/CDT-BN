@@ -179,20 +179,24 @@ const Home = () => {
         <div className="col-md-6 mt-5">
           <div className="fondo">
             <div className="i-right col-md-6">
-              <img src={portada} alt="" style={{ maxWidth: "100%", height: "auto", marginTop: "5rem" }} />
-              <div style={{ top: '2.5rem', left: '6rem' }}>
-          
+              <img className="portada"
+                src={portada}
+                alt=""
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  marginTop: "29.5%",
+                  
+                  objectFit: "contain", // Establece la propiedad object-fit para asegurarte de que la imagen se ajuste correctamente dentro del contenedor
+                }}
+              />
+
+              <div style={{ marginTop: '14.75%', left: '162.25%' }}>
+                <img style={{ maxWidth: '120px', height: "auto" }} src={meta} />
               </div>
-              <div style={{ top: '2.5rem', left: '27.5rem' }}>
-              <img style={{ maxWidth: '120px', height: "auto" }} src={meta} />
-              </div>
-              <div style={{ top: '18.5rem', left: '24.5rem' }}>
-                
-              </div>
-              <div style={{ top: '13rem', left: '3rem' }}>
+              <div style={{ top: '13rem', left: '17.7%' }}>
                 <FloatingDiv />
               </div>
-              {/* Blur divs */}
               <div className="blur" style={{ background: "#ffffff" }}></div>
               <div
                 className="blur"
@@ -217,7 +221,6 @@ const Home = () => {
                 background: '#bbdefb', // Gradiente de color de fondo
               }}
             ></div>
-
             <div
               className="background-div"
               style={{
@@ -232,21 +235,6 @@ const Home = () => {
             ></div>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       </div>
 
       {/* imágenes */}

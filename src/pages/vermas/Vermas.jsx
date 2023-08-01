@@ -13,7 +13,7 @@ const Vermas = () => {
   }
 
   return (
-    <div className="container mt-4">
+    <div className="prueba container mt-4">
       <Helmet>
         <title>{subprograma.nombre}</title>
       </Helmet>
@@ -28,36 +28,36 @@ const Vermas = () => {
 
 
           <h4>Contenidos:</h4>
-          <Tabs>
-            <TabList>
-              <Tab>{subprograma.Contenido1}</Tab>
-              <Tab>{subprograma.Contenido2}</Tab>
-              <Tab>{subprograma.Contenido3}</Tab>
-              <Tab>{subprograma.Contenido4}</Tab>
-              <Tab>{subprograma.Contenido5}</Tab>
-              <Tab>{subprograma.Contenido6}</Tab>
-              <Tab>{subprograma.Contenido7}</Tab>
+          <Tabs className="Tabs">
+            <TabList className="TabList">
+              <Tab className="Tab">{subprograma.Contenido1}</Tab>
+              <Tab className="Tab">{subprograma.Contenido2}</Tab>
+              <Tab className="Tab">{subprograma.Contenido3}</Tab>
+              <Tab className="Tab">{subprograma.Contenido4}</Tab>
+              <Tab className="Tab">{subprograma.Contenido5}</Tab>
+              <Tab className="Tab">{subprograma.Contenido6}</Tab>
+              <Tab className="Tab">{subprograma.Contenido7}</Tab>
             </TabList>
 
-            <TabPanel>
+            <TabPanel className="TabPanel" >
               <p>{subprograma.Contenido1}</p>
             </TabPanel>
-            <TabPanel>
+            <TabPanel className="TabPanel">
               <p>{subprograma.Contenido2}</p>
             </TabPanel>
-            <TabPanel>
+            <TabPanel className="TabPanel">
               <p>{subprograma.Contenido3}</p>
             </TabPanel>
-            <TabPanel>
+            <TabPanel className="TabPanel">
               <p>{subprograma.Contenido4}</p>
             </TabPanel>
-            <TabPanel>
+            <TabPanel className="TabPanel">
               <p>{subprograma.Contenido5}</p>
             </TabPanel>
-            <TabPanel>
+            <TabPanel className="TabPanel">
               <p>{subprograma.Contenido6}</p>
             </TabPanel>
-            <TabPanel>
+            <TabPanel className="TabPanel">
               <p>{subprograma.Contenido7}</p>
             </TabPanel>
           </Tabs>

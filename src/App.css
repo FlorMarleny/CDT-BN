@@ -52,7 +52,6 @@ body {
 
 
 h2 {
-  animation: pulse 2s infinite alternate;
   font-family: "HelveticaNeue", sans-serif;
   font-weight: bold;
   font-size: 22px;

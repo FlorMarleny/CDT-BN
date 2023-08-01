@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./Vermas.css";
 
-
 const Vermas = () => {
   const location = useLocation();
   const subprograma = location.state?.subprograma || null;
@@ -28,7 +27,7 @@ const Vermas = () => {
           <h4>Descripción:</h4>
           <p>{subprograma.descripcion}</p>
           <h4>Contenidos:</h4>
-          
+
           <ul>
             {subprograma.contenido1 && (
               <li>
@@ -58,7 +57,90 @@ const Vermas = () => {
                 )}
               </li>
             )}
-            {/* Repite el patrón para los demás contenidos */}
+            {subprograma.contenido3 && (
+              <li>
+                <button onClick={() => handleTabClick(3)}>
+                  {subprograma.contenido3[0]}
+                </button>
+                {activeTab === 3 && (
+                  <ul>
+                    {subprograma.contenido3[1].map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            )}
+            {subprograma.contenido4 && (
+              <li>
+                <button onClick={() => handleTabClick(4)}>
+                  {subprograma.contenido4[0]}
+                </button>
+                {activeTab === 4 && (
+                  <ul>
+                    {subprograma.contenido4[1].map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            )}
+            {subprograma.contenido5 && (
+              <li>
+                <button onClick={() => handleTabClick(5)}>
+                  {subprograma.contenido5[0]}
+                </button>
+                {activeTab === 5 && (
+                  <ul>
+                    {subprograma.contenido5[1].map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            )}
+            {subprograma.contenido6 && (
+              <li>
+                <button onClick={() => handleTabClick(6)}>
+                  {subprograma.contenido6[0]}
+                </button>
+                {activeTab === 6 && (
+                  <ul>
+                    {subprograma.contenido6[1].map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            )}
+            {subprograma.contenido7 && (
+              <li>
+                <button onClick={() => handleTabClick(7)}>
+                  {subprograma.contenido7[0]}
+                </button>
+                {activeTab === 7 && (
+                  <ul>
+                    {subprograma.contenido7[1].map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            )}
+            {subprograma.contenido8 && (
+              <li>
+                <button onClick={() => handleTabClick(8)}>
+                  {subprograma.contenido8[0]}
+                </button>
+                {activeTab === 8 && (
+                  <ul>
+                    {subprograma.contenido8[1].map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            )}
           </ul>
         </div>
 

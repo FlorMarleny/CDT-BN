@@ -16,12 +16,16 @@ export const programaTransversal = {
         "INTRODUCCIÓN: AUTOCAD 2D",
         [
           "Conceptos básicos de Espacio de Trabajo: Dibujo y Anotación",
-          "Elementos 3D Básicos",
+          "Elementos 3D Básicos y Modelado 3D ",
+          "Cinta: Inicio, Visualizar, Inserción, Anotar, Vista, Salida.",
+          "Comandos de Visualización: Encuadre", 
+          "Extensión: Zoom Ventana, Zoom en Tiempo Real, Zoom Centro, Zoom Dinámico, Zoom Objeto, Zoom Todo.",		
+          "Personalizar Barra de Estado: GRIDMODE, DYNMODE, ORTHOMODE, OSNAP"			
         ],
       ],
       contenido2: [
         "COMANDOS DE DIBUJO Y EDICIÓN I",
-        ["Concepto 1", "Concepto 2", "Concepto 3"],
+        ["Concepto 700", "Concepto 2", "Concepto 3"],
       ],
 
       contenido3: "COMANDOS DE DIBUJO Y EDICIÓN II",

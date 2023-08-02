@@ -14,12 +14,8 @@ const Footer = () => {
                     <div className="col-md-3 col-sm-6 col-6 p-0 mb-3 footer-column">
                         <h5 className="mb-4 font-weight-bold text-uppercase">Inicio</h5>
                         <ul className="list-group">
-                            <li className="list-group-item bg-transparent border-0 p-0 mb-2"><a className="a" href="../sales/sales-performance-market-pipeline.html">Sales</a></li>
-                            <li className="list-group-item bg-transparent border-0 p-0 mb-2"><a className="a" href="href=">Project Management</a></li>
-                            <li className="list-group-item bg-transparent border-0 p-0 mb-2"><a className="a" href="../workforce/workforce-organization-management-hr.html">Workforce</a></li>
-                            <li className="list-group-item bg-transparent border-0 p-0 mb-2"><a className="a" href="../e-commerce/e-commerce.html"> E-Commerce</a></li>
-                            <li className="list-group-item bg-transparent border-0 p-0 mb-2"><a className="a" href="../finance/finance-accounting-erp.html">Finance</a></li>
-                            <li className="list-group-item bg-transparent border-0 p-0 mb-2"><a className="a" href="../business-apps/business-apps.html">Business Apps</a></li>
+                            <li className="list-group-item bg-transparent border-0 p-0 mb-2"><a className="a" href="../sales/sales-performance-market-pipeline.html">Nuestras experiencias</a></li>
+                            <li className="list-group-item bg-transparent border-0 p-0 mb-2"><a className="a" href="href=">Testimomios</a></li>
                         </ul>
                     </div>
                     <div className="col-md-3 col-sm-6 col-6 p-0 mb-3 footer-column">

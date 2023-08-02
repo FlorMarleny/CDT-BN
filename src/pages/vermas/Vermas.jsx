@@ -21,7 +21,6 @@ const Vermas = () => {
       <div className="row">
         <div className="col-md-6">
           <h2>{subprograma.nombre}</h2>
-          <p>{subprograma.texto}</p>
           <p>Modalidad: {subprograma.modalidad}</p>
           <p>Horas Académicas: {subprograma.horasAcademicas}</p>
           <h4>Descripción:</h4>
@@ -31,11 +30,14 @@ const Vermas = () => {
           <ul>
             {subprograma.contenido1 && (
               <li>
-                <button onClick={() => handleTabClick(1)}>
+                <button
+                  className={`tab-button ${activeTab === 1 ? "active" : ""}`}
+                  onClick={() => handleTabClick(1)}
+                >
                   {subprograma.contenido1[0]}
                 </button>
                 {activeTab === 1 && (
-                  <ul>
+                  <ul className="tab-content">
                     {subprograma.contenido1[1].map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
@@ -45,11 +47,14 @@ const Vermas = () => {
             )}
             {subprograma.contenido2 && (
               <li>
-                <button onClick={() => handleTabClick(2)}>
+                <button
+                  className={`tab-button ${activeTab === 2 ? "active" : ""}`}
+                  onClick={() => handleTabClick(2)}
+                >
                   {subprograma.contenido2[0]}
                 </button>
                 {activeTab === 2 && (
-                  <ul>
+                  <ul className="tab-content">
                     {subprograma.contenido2[1].map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
@@ -59,11 +64,14 @@ const Vermas = () => {
             )}
             {subprograma.contenido3 && (
               <li>
-                <button onClick={() => handleTabClick(3)}>
+                <button
+                  className={`tab-button ${activeTab === 3 ? "active" : ""}`}
+                  onClick={() => handleTabClick(3)}
+                >
                   {subprograma.contenido3[0]}
                 </button>
                 {activeTab === 3 && (
-                  <ul>
+                  <ul className="tab-content">
                     {subprograma.contenido3[1].map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
@@ -73,11 +81,14 @@ const Vermas = () => {
             )}
             {subprograma.contenido4 && (
               <li>
-                <button onClick={() => handleTabClick(4)}>
+                <button
+                  className={`tab-button ${activeTab === 4 ? "active" : ""}`}
+                  onClick={() => handleTabClick(4)}
+                >
                   {subprograma.contenido4[0]}
                 </button>
                 {activeTab === 4 && (
-                  <ul>
+                  <ul className="tab-content">
                     {subprograma.contenido4[1].map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
@@ -87,11 +98,14 @@ const Vermas = () => {
             )}
             {subprograma.contenido5 && (
               <li>
-                <button onClick={() => handleTabClick(5)}>
+                <button
+                  className={`tab-button ${activeTab === 5 ? "active" : ""}`}
+                  onClick={() => handleTabClick(5)}
+                >
                   {subprograma.contenido5[0]}
                 </button>
                 {activeTab === 5 && (
-                  <ul>
+                  <ul className="tab-content">
                     {subprograma.contenido5[1].map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
@@ -101,11 +115,14 @@ const Vermas = () => {
             )}
             {subprograma.contenido6 && (
               <li>
-                <button onClick={() => handleTabClick(6)}>
+                <button
+                  className={`tab-button ${activeTab === 6 ? "active" : ""}`}
+                  onClick={() => handleTabClick(6)}
+                >
                   {subprograma.contenido6[0]}
                 </button>
                 {activeTab === 6 && (
-                  <ul>
+                  <ul className="tab-content">
                     {subprograma.contenido6[1].map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
@@ -115,11 +132,14 @@ const Vermas = () => {
             )}
             {subprograma.contenido7 && (
               <li>
-                <button onClick={() => handleTabClick(7)}>
+                <button
+                  className={`tab-button ${activeTab === 7 ? "active" : ""}`}
+                  onClick={() => handleTabClick(7)}
+                >
                   {subprograma.contenido7[0]}
                 </button>
                 {activeTab === 7 && (
-                  <ul>
+                  <ul className="tab-content">
                     {subprograma.contenido7[1].map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
@@ -129,11 +149,14 @@ const Vermas = () => {
             )}
             {subprograma.contenido8 && (
               <li>
-                <button onClick={() => handleTabClick(8)}>
+                <button
+                  className={`tab-button ${activeTab === 8 ? "active" : ""}`}
+                  onClick={() => handleTabClick(8)}
+                >
                   {subprograma.contenido8[0]}
                 </button>
                 {activeTab === 8 && (
-                  <ul>
+                  <ul className="tab-content">
                     {subprograma.contenido8[1].map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}

@@ -34,7 +34,7 @@ const Desplazamiento = () => {
       {/* Contenido de tu componente aquí */}
 
       {isScrollVisible && (
-        <div className="scroll-button" onClick={scrollToTop}>
+        <div className="ocultar scroll-button" onClick={scrollToTop}>
           <FaArrowUp />
         </div>
       )}

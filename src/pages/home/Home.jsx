@@ -169,25 +169,25 @@ const Home = () => {
           </div>
 
           {/* Enlace "APRENDE MÁS" */}
-          <u><a className="learnmore"
-            href="#"
-          >
-            Aprende más
-          </a></u>
+          <u>
+            <a className="learnmore" href="#">
+              Aprende más
+            </a>
+          </u>
         </div>
 
-        <div className="col-md-6 mt-5">
-          <div className="fondo">
+        <div className="ocultar col-md-6 mt-5">
+          <div className="fondo" style={{ position: "relative", width: "100%", height: "100%" }}>
             <div className="i-right col-md-6">
-              <img className="portada"
+              <img
+                className="portada"
                 src={portada}
                 alt=""
                 style={{
                   width: "100%",
                   height: "auto",
                   marginTop: "29.5%",
-                  
-                  objectFit: "contain", // Establece la propiedad object-fit para asegurarte de que la imagen se ajuste correctamente dentro del contenedor
+                  objectFit: "contain",
                 }}
               />
 
@@ -197,6 +197,7 @@ const Home = () => {
               <div style={{ top: '13rem', left: '17.7%' }}>
                 <FloatingDiv />
               </div>
+              {/* Blur divs */}
               <div className="blur" style={{ background: "#ffffff" }}></div>
               <div
                 className="blur"
@@ -215,22 +216,22 @@ const Home = () => {
               style={{
                 position: 'absolute',
                 top: '18rem',
-                left: '7rem',
+                left: '6.5rem',
                 width: '80%',
-                height: '168px', // Ajusta esta altura según tus necesidades
-                background: '#bbdefb', // Gradiente de color de fondo
+                height: '36%', // Ajusta esta altura según tus necesidades
+                background: '#bbdefb',
               }}
             ></div>
             <div
               className="background-div"
               style={{
                 position: 'absolute',
-                top: '17rem',
-                left: '1.75rem',
-                width: '48.01px',
-                height: '47.88px', // Ajusta esta altura según tus necesidades
-                background: '#2196f3', // Gradiente de color de fondo
-                borderRadius: '50%', // Hace que el fondo sea circular
+                top: '17.25rem',
+                left: '1.8rem',
+                width: '7.5%', // Ajusta el ancho según tus necesidades
+                paddingBottom: '7.5%', // Crea un círculo estableciendo el mismo valor de ancho y alto
+                background: '#2196f3',
+                borderRadius: '50%',
               }}
             ></div>
           </div>
@@ -306,6 +307,8 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Banner de gracias */}
+
       <aside className="responsive-banner first">
         <div className="container-envelope">
           <svg className="cirle-a img" height="160" width="160">
@@ -323,7 +326,7 @@ const Home = () => {
           <img className="imagen" src={pacasmayo} />
           <div className="col-xs-12">
             <img src={empresa} alt="Logo de la Empresa" id="logo" />
-            <p className="" >Gracias a <strong>Cementos Pacasmayo</strong> S.A.A.</p>
+            <p className="gracias" >Gracias a <strong>Cementos Pacasmayo</strong> S.A.A.</p>
             <a className="more-link" target="_blank" href="https://www.cementospacasmayo.com.pe/">Ven a visitarnos</a>
           </div>
         </div>

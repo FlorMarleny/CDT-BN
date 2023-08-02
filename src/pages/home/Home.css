@@ -23,9 +23,11 @@
   0% {
     color: #f02a22;
   }
+
   50% {
     color: #d50000;
   }
+
   100% {
     color: #f02a22;
   }
@@ -89,7 +91,8 @@ u {
 .testimonial-container {
   padding: 10px;
   margin-bottom: 20px;
-  background-color: var(--white-color);;
+  background-color: var(--white-color);
+  ;
   margin-right: 25px;
   margin-left: 25px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -162,30 +165,12 @@ u {
   transform: rotate(-45deg);
 }
 
-
-
-.fondo {
-  position: relative; /* Asegura que los elementos posicionados dentro sean relativos a este contenedor */
-}
-
-.fondo::before {
-  content: ""; /* Agregar un pseudo-elemento ::before */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #d50000; /* Color de fondo rojo */
-  opacity: 0.8; /* Ajusta la opacidad según tus preferencias */
-  z-index: -1; /* Colocar detrás de los otros elementos */
-}
-
 .i-right {
   flex: 1;
   position: relative;
 }
 
-.i-right > * {
+.i-right>* {
   position: absolute;
   z-index: 1;
 }
@@ -194,8 +179,6 @@ u {
   transform: scale(1.4);
   left: 55%;
 }
-
-
 
 .blur {
   position: absolute;
@@ -210,10 +193,6 @@ u {
   filter: blur(72px);
 }
 
-
-
-
-
 /* Modo oscuro*/
 
 /* Definir una animación de fotograma */
@@ -221,9 +200,11 @@ u {
   0% {
     color: yellow;
   }
+
   50% {
     color: #eeff41;
   }
+
   100% {
     color: yellow;
   }
@@ -261,7 +242,7 @@ u {
   color: #f3f3f4;
 }
 
-/* Banner Gracias  */
+/* Banner de Gracias  */
 .responsive-banner {
   display: inline-block;
   width: 100%;
@@ -273,9 +254,7 @@ u {
   max-height: 450px;
   border-radius: 10px;
   overflow: hidden;
-  /* background-image: linear-gradient(to bottom right, #D45BA1, #A784E0); */
   background-image: linear-gradient(to bottom right, #f11826, #a4071d);
-
   background-repeat: no-repeat;
   text-align: left;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -306,19 +285,6 @@ u {
   align-self: flex-end;
 }
 
-@media (min-width: 650px) {
-  .col-xs-12 {
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-  }
-
-  .container-envelope {
-    max-width: calc(100% - 200px);
-  }
-}
-
-
 .more-link {
   background-color: rgba(255, 255, 255, 0.35);
   display: inline-block;
@@ -336,6 +302,13 @@ u {
   -moz-transition: .1s all ease-in-out;
   -o-transition: .1s all ease-in-out;
   transition: .1s all ease-in-out;
+  /* Clases de Bootstrap para hacerlo responsive */
+  width: 100%;
+  /* Ocupar todo el ancho disponible */
+  max-width: 180px;
+  /* Ancho máximo */
+  margin: 0 auto;
+  /* Centrar horizontalmente */
 }
 
 .more-link:hover {
@@ -384,7 +357,7 @@ svg,
 }
 
 .link-container .more-link {
-  font-family: 'HelveticaNeue',  sans-serif;
+  font-family: 'HelveticaNeue', sans-serif;
   background-color: #90b0bf;
   color: #fff;
   display: inline-block;
@@ -395,11 +368,12 @@ svg,
   text-transform: none;
   font-weight: 400;
   letter-spacing: 1px;
+  font-stretch: 100%;
 }
 
 
 #logo {
-  width: 200px !important;
+  width: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -429,12 +403,58 @@ svg,
   transform: translateY(-10px);
 }
 
-/* Add media query for smaller screens (e.g., tablets and mobiles) */
-@media (max-width: 768px) {
-  .portada {
-     max-height: calc(118.7vh - 30rem); /* Ajusta la altura máxima según tus necesidades */
+
+@media (max-width: 480px) {
+  .col-xs-12 {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-left: 2rem;
+
   }
 
+  .responsive-banner {
+    margin-top: 25px;
+    min-height: 150px;
+    max-height: 50px;
+    border-radius: 5px;
+  }
+
+  .container-envelope {
+    min-height: 150px;
+    max-height: 50px;
+  }
+
+  #logo {
+    width: 100px;
+  }
+
+  .more-link {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
 
 }
 
+
+
+
+
+
+
+
+
+/* Add media query for smaller screens (e.g., tablets and mobiles) */
+@media (max-width: 768px) {
+  .portada {
+    max-height: calc(118.7vh - 30rem);
+    /* Ajusta la altura máxima según tus necesidades */
+  }
+}
+
+/* Add media query for smaller screens (e.g., tablets and mobiles) */
+@media (max-width: 480px) {
+  .ocultar {
+    display: none;
+  }
+}

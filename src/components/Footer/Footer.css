@@ -34,3 +34,14 @@ h5 {
 footer {
     background: transparent;
 }
+
+
+        /* Estilos para dispositivos móviles */
+        @media (max-width: 480px) {
+            /* Para pantallas con ancho máximo de 480px (pantallas móviles) */
+            
+            .footer-column {
+                /* Para asegurarnos de que cada columna ocupe el ancho completo en dispositivos móviles */
+                width: 100% !important;
+            }
+        }

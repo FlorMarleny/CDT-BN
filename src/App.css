@@ -74,6 +74,7 @@ p {
   line-height: 1.6; 
   text-align: justify;
   color: var(--parrafo-color);
+  font-stretch: 100%;
 }
 
 img{
@@ -87,3 +88,14 @@ img{
   background-color: var(--darkbackground-color);
 }
 
+/* Add media query for smaller screens (e.g., tablets and mobiles) */
+@media (max-width: 480px) {
+  .gracias {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-style: normal;
+    font-size: 14px; 
+    text-align: justify;
+    color: var(--parrafo-color);
+    font-stretch: 100%;
+  }
+}

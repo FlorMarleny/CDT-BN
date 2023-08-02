@@ -17,3 +17,10 @@
   .scroll-button.hide {
     display: none;
   }
+
+  /* Add media query for smaller screens (e.g., tablets and mobiles) */
+@media (max-width: 480px) {
+  .ocultar {
+    display: none;
+  }
+}

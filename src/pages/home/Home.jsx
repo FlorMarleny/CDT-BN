@@ -197,18 +197,6 @@ const Home = () => {
               <div style={{ top: '13rem', left: '17.7%' }}>
                 <FloatingDiv />
               </div>
-              {/* Blur divs */}
-              <div className="blur" style={{ background: "#ffffff" }}></div>
-              <div
-                className="blur"
-                style={{
-                  background: '#ffffff',
-                  top: '17rem',
-                  width: '21rem',
-                  height: '11rem',
-                  left: '-9rem',
-                }}
-              ></div>
             </div>
             {/* Agregar fondo debajo de la imagen */}
             <div
@@ -275,7 +263,7 @@ const Home = () => {
       </div>
 
       {/* COLLAGE */}
-      <h2 className="mb-4">Nuestras<span> experiencias</span></h2>
+      <h2 className={`mb-4 ${isDarkMode ? "dark-mode-content" : "light-mode-content"}`} >Nuestras <span> experiencias</span></h2>
       <div className={`row ${isDarkMode ? "dark-mode-content" : "light-mode-content"}`}>
         <div className="col-md-6">
           <img

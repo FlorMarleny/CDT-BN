@@ -1,0 +1,34 @@
+.bg-fondo{
+    background-color: #f21826;
+}
+
+.estudiantes-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
+.icono {
+    margin-right: 25px;
+    color: var(--white-color);
+}
+
+.numero {
+    font-family: var(--tipo-letra);
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.texto {
+    font-family: var(--tipo-letra);
+    font-size: 18px;
+    color: var(--white-color);
+}

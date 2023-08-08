@@ -19,13 +19,13 @@ function App() {
       {/* Wrap the entire application with DarkModeProvider */}
       <BrowserRouter>
         <Menu />
-        <div className="container">
+        <div className="">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/nosotros" element={<Nosotros />} />
-            <Route path="/cursosyprogramas" element={<CursosyProgramas />} />
+            <Route path="/todos-los-programas" element={<CursosyProgramas />} />
             <Route path="/cursos" element={<Cursos />} />
-            <Route path="/todos-los-programas" element={<Programas />} />
+            <Route path="/programas" element={<Programas />} />
 
             {/* <Route path="/vermas/:subprogramaId" element={<Vermas />} /> */}
             {/* Con esta ruta se ve la imagen */}

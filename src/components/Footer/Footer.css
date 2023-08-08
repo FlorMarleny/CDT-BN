@@ -1,47 +1,90 @@
-.body {
-    font-family: 'HelveticaNeue', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    overflow-x: hidden;
-    color: #607289;
-}
-
-.logo{
+.logo {
     width: 200px;
     background-size: cover;
     object-fit: cover;
 }
 
 h5 {
-    font-size: 14px;
-    font-family: "HelveticaNeue", sans-serif;
-    font-weight: bold;
+    font-size: 16px;
+    font-family: var(--tipo-letra);
+    font-weight: 700;
     color: #00233F;
+    text-decoration: none solid rgb(255, 255, 255);
+    font-style: normal;
+    font-stretch: 100%;
 }
 
 .al {
+    font-family: var(--tipo-letra);
     color: #818494;
-    font-weight: 500;
-    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none solid rgb(255, 255, 255);
     background-color: transparent;
+    font-stretch: 100%;
 }
 
 .al:hover {
     color: #007bff;
-    text-decoration: none;
 }
 
-footer {
-    background: transparent;
+.copy-right{
+    font-family: var(--tipo-letra);
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: 100%;
+    text-decoration: none solid rgb(229, 230, 235);
+    text-align: center;
+}
+
+.color-fondo {
+    background-color: #f9fafb;
+    font-weight: 400;
+    font-size: 1rem;
+    overflow-x: hidden;
+    color: #607289;
+}
+
+.dark-mode-content .color-fondo{
+    background-color: var(--black-color) !important;
+  }
+  
+.dark-mode-content h5{
+    color: var(--white-color);
+
+}
+
+.dark-mode-content .al{
+    color: #b2b2ba;
+}
+
+.dark-mode-content  .al:hover {
+    color: #ffffff;
+}
+
+.dark-mode-content .copy-right{
+    color:#E5E6EB;
 }
 
 
-        /* Estilos para dispositivos móviles */
-        @media (max-width: 480px) {
-            /* Para pantallas con ancho máximo de 480px (pantallas móviles) */
-            
-            .footer-column {
-                /* Para asegurarnos de que cada columna ocupe el ancho completo en dispositivos móviles */
-                width: 100% !important;
-            }
-        }
+
+/* Estilos para dispositivos móviles con ancho máximo de 480px */
+@media (max-width: 510px) {
+    .footer-column {
+        width: 100% !important;
+    }
+    /* .logo-contenedor{
+        display: flex;
+    } */
+    #logoPacasmayo{
+        margin-bottom: 30px !important;
+        align-items: start !important;
+    } 
+}
+
+@media (max-width: 880px) {
+    #logoPacasmayo{
+        width: 145px !important;
+    }
+}

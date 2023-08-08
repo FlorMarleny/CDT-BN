@@ -50,10 +50,12 @@ export const programaTransversal = {
           "ALARGAR",
         ],
       ],
+
       contenido4: [
         "COMANDOS DE DIBUJO Y EDICIÓN III",
         ["ARRAY: RECTANGULAR", "POLAR Y RUTA", "DIVIDE", "MEDIDA y LONGITUD"],
       ],
+
       contenido5: [
         "OBJETOS Y CAPAS - BLOQUES INTERNOS y EXTERNOS",
         [
@@ -69,8 +71,18 @@ export const programaTransversal = {
           "Crear una Familia de Cotas",
         ],
       ],
+
       contenido6: ["PLOTEO", ["Espacio Modelo", "Espacio Papel"]],
       contenido7: ["PROYECTO", ["Presentación de proyecto final "]],
+      capacitado1:"Representar e interpretar dibujos mecánicos, eléctricos y electrónicos.",
+      capacitado2:"Representar e interpretar planos sencillos de sistemas técnicos, computacionales e industriales.",
+      capacitado3: "Utilizar normas y estándares de dibujo técnico.",
+      requisitos: "Mínimo tercer año de secundaria o entrevista previa.",
+      dirigido: "Estudiantes de secundaria y público en general",
+      metodologia: "Teórico - Práctico",
+      nivel: "Básico",
+      especialidad: "Dibujo Computarizado",
+      area: "Tecnologías de la Información",
       modalidad: "Virtual",
       gratis: true,
     },
@@ -320,12 +332,12 @@ export const programaTransversal = {
       id: 6,
       nombre: "Excel Avanzado con Macros",
       imagen: "src/img/excel-macros.png",
-      horasAcademicas:"32 Horas",
+      horasAcademicas: "32 Horas",
       texto:
         "Curso de macros en Excel: automatización de tareas, ahorro de tiempo y herramientas avanzadas para control de información.",
-      descripcion: 
-      "Curso centrado en el entendimiento de lo que es una macro para la creación de instrucciones que automaticen tareas repetitivas, de tal manera que el participante ahorre tiempo y minimice errores de procedimiento en sus respectivas hojas de cálculo. Todo este procedimiento vendrá acompañado del uso de herramientas de Excel Avanzadas para la creación de programas que permitan elaborar pequeños sistemas para casos específicos de control de información.",
-      
+      descripcion:
+        "Curso centrado en el entendimiento de lo que es una macro para la creación de instrucciones que automaticen tareas repetitivas, de tal manera que el participante ahorre tiempo y minimice errores de procedimiento en sus respectivas hojas de cálculo. Todo este procedimiento vendrá acompañado del uso de herramientas de Excel Avanzadas para la creación de programas que permitan elaborar pequeños sistemas para casos específicos de control de información.",
+
       contenido1: [
         "INTRODUCCIÓN A MACROS",
         [
@@ -334,58 +346,32 @@ export const programaTransversal = {
           "Modificación de Macros",
         ],
       ],
-      contenido2: [
-        "FICHA DE PROGRAMADOR",
-        
-      ],
+      contenido2: ["FICHA DE PROGRAMADOR"],
 
-      contenido3: [
-        "EDITOR DE VISUAL BASIC",
-       
-      ],
-      contenido4: [
-        "ESTRUCTURA DE UNA MACRO",
-      ],
-      contenido5: [
-        "MANEJO DE VARIABLES",
-      ],
+      contenido3: ["EDITOR DE VISUAL BASIC"],
+      contenido4: ["ESTRUCTURA DE UNA MACRO"],
+      contenido5: ["MANEJO DE VARIABLES"],
       contenido6: [
         "CREACIÓN DE INSTRUCCIONES EJECUTABLES",
-        [
-         "Asignación de Instrucciones",
-         "Entrada y Salidas de Datos"
-        ],
+        ["Asignación de Instrucciones", "Entrada y Salidas de Datos"],
       ],
-      contenido7: [
-        "DECLARACIÓN DE VARIABLES",
-      
-      ],
-      contenido8: [
-        "ELEMENTOS DE PROGRAMACIÓN",
-      ],
+      contenido7: ["DECLARACIÓN DE VARIABLES"],
+      contenido8: ["ELEMENTOS DE PROGRAMACIÓN"],
       contenido9: [
         "TIPO DE INSTRUCCIONES",
-        [
-         "Generación de Código Secuencial",
-         "Generación de Código Condicional"
-        ],
+        ["Generación de Código Secuencial", "Generación de Código Condicional"],
       ],
-      contenido10: [
-        "CREACIÓN DE INSTRUCCIONES EJECUTABLES",
-      ],
-      contenido11: [
-        "TIPOS DE INSTRUCCIONES REPETITIVAS		",
-      ],
+      contenido10: ["CREACIÓN DE INSTRUCCIONES EJECUTABLES"],
+      contenido11: ["TIPOS DE INSTRUCCIONES REPETITIVAS		"],
       contenido12: [
         "CREACIÓN DE FORMULARIOS EN VBA",
         [
-         "Creación de Controles",
-         "Controles más Usados",
-         "Manejo de Propiedades",
-         "Código de Formulario",
+          "Creación de Controles",
+          "Controles más Usados",
+          "Manejo de Propiedades",
+          "Código de Formulario",
         ],
       ],
-
 
       modalidad: "Presencial",
       gratis: true,

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { useDarkMode } from "../../DarkModeContext";
 import { programaTransversal } from "./Datos/programaTransversal";
 import { programaPerfil } from "./Datos/programaPerfil";
 import { programaEducar } from "./Datos/programaEducar";
@@ -11,6 +12,10 @@ import Footer from "../../components/Footer/Footer";
 import "./Programas.css";
 
 const Programas = () => {
+
+  const { isDarkMode } = useDarkMode();
+
+
   const [programaActivo, setProgramaActivo] = useState(1); // Establecemos el programa activo inicialmente como "Transversal"
   const programas = [
     programaTransversal,
@@ -56,7 +61,7 @@ const Programas = () => {
   );
   const totalPages = Math.ceil(
     programas[programaActivo - 1]?.subprogramas.length /
-      (columnsPerPage * rowsPerPage)
+    (columnsPerPage * rowsPerPage)
   );
 
   const nextPage = () => {
@@ -72,21 +77,23 @@ const Programas = () => {
   };
 
   return (
-    <div>
+    <div className={`${isDarkMode ? "dark-mode" : "light-mode"}`}>
       <Helmet>
         <title>Programas</title>
       </Helmet>
+      <div style={{ textAlign: "center", margin: "0px 0", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <h2 className="mt-4">PROG<span className="span">RAMAS</span></h2>
+      </div>
 
-      <div className="container">
+      <div className="contenedor">
         <div className="row">
           <div className="col-md-3">
             <div className="btn-group-vertical">
               {programas.map((programa) => (
                 <button
                   key={programa.id}
-                  className={`program-button btn btn-primary ${
-                    programaActivo === programa.id ? "active" : ""
-                  }`}
+                  className={`program-button btn btn-primary ${programaActivo === programa.id ? "active" : ""
+                    }`}
                   onClick={() => handleProgramaClick(programa.id)}
                 >
                   {programa.nombre}
@@ -105,43 +112,25 @@ const Programas = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="card p-0 position-relative h-100 d-flex flex-column">
-                    <img
-                      src={subprograma.imagen}
-                      alt={subprograma.nombre}
-                      className={`card-img-top ${
-                        mouseOverCard === subIndex ? "img-darken" : ""
-                      }`}
-                    />
+                    <img src={subprograma.imagen} alt={subprograma.nombre} className={`card-img-top ${mouseOverCard === subIndex ? "img-darken" : ""}`} />
                     {mouseOverCard === subIndex && (
-                      <p className="card-text mb-0 card-gratis-overlay">
-                        GRATIS
-                      </p>
+                      <p className="card-text mb-0 card-gratis-overlay">GRATIS</p>
                     )}
 
                     <div className="card-body d-flex flex-column p-3">
                       <p className={`mb-0`} style={{ color: "plum" }}>
-                        <strong style={{ color: "#bdc3c7" }}>
-                          {subprograma.modalidad}
-                        </strong>
+                        <strong style={{ color: "#bdc3c7" }}>{subprograma.modalidad}</strong>
                       </p>
                       <h5 className="card-title" style={{ color: "#2c3e50" }}>
                         <strong>{subprograma.nombre}</strong>
                       </h5>
-                      <p
-                        className="card-text card-text-small flex-grow-1"
-                        style={{ color: "#525252" }}
-                      >
+                      <p className="card-text card-text-small flex-grow-1" style={{ color: "#525252" }}>
                         {subprograma.texto}
                       </p>
                       <div className="d-flex justify-content-between align-items-center  mb-3">
-                      {/* Con esta ruta se ve la imagen */}
-                        <Link
-                          to={`/${subprograma.id}`}
-                          state={{ subprograma }}
-                        >
-                          <button className="btn btn-dark button-ver-mas">
-                            VER MÁS
-                          </button>
+                        {/* Con esta ruta se ve la imagen */}
+                        <Link to={`/${subprograma.id}`} state={{ subprograma }}>
+                          <button className="btn btn-dark button-ver-mas">VER MÁS</button>
                         </Link>
                       </div>
                     </div>
@@ -162,25 +151,11 @@ const Programas = () => {
               </button>
             </li>
             {Array.from({ length: totalPages }).map((_, index) => (
-              <li
-                key={index + 1}
-                className={`page-item ${
-                  currentPage === index + 1 ? "active" : ""
-                }`}
-              >
-                <button
-                  className="page-link"
-                  onClick={() => setCurrentPage(index + 1)}
-                >
-                  {index + 1}
-                </button>
+              <li key={index + 1} className={`page-item ${currentPage === index + 1 ? "active" : ""}`}>
+                <button className="page-link" onClick={() => setCurrentPage(index + 1)}>{index + 1}</button>
               </li>
             ))}
-            <li
-              className={`page-item ${
-                currentPage === totalPages ? "disabled" : ""
-              }`}
-            >
+            <li className={`page-item ${currentPage === totalPages ? "disabled" : ""}`}>
               <button className="page-link" onClick={nextPage}>
                 <span aria-hidden="true">&raquo;</span>
               </button>
@@ -188,7 +163,6 @@ const Programas = () => {
           </ul>
         </nav>
       </div>
-
       <Footer />
     </div>
   );

@@ -5,7 +5,7 @@ import foto1 from '../../img/cdt-sechura.jpg'
 const Historia = () => {
     return (
         <section className='mt-4' style={{ padding: '1rem' }}>
-            <h2>CENTROS DE DIFUSIÓN DE <span>TECNOLOGÍA</span></h2>
+            <h2>Explorando nuestra <span>Historia</span></h2>
             <div className='d-grid bg-gris'>
                 <div style={{ marginBottom: '0rem' }}>
                     <p>Desde el año 2003 en Pacasmayo, 2007 en Tembladera y 2015 en Sechura, se han aperturado estos centros de estudio, para brindar oportunidades de capacitación a la población de manera gratuita, contribuyendo de esta forma en acortar las brechas en el uso de las nuevas herramientas de tecnología de la información.

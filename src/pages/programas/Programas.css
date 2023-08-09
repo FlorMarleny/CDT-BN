@@ -32,7 +32,12 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   animation: loading 2s linear infinite;
 }
 
@@ -42,8 +47,47 @@
   }
 }
 
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center; /* Añade esta línea para centrar horizontalmente */
 
+}
 
+.input-group {
+  width:100%;
+  border: 1px solid #d7dce1;
+  border-radius: 0;
+  
+}
+
+.input-group-text {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.input-group-addon {
+  padding: 0;
+  border: none;
+}
+
+.input-group-text {
+  background-color: #a3071d;
+  border-color: #a3071d;
+  color: #fff;
+  border-radius: 0; 
+}
+
+.form-control {
+  border-right: none;
+  border-radius: 0;
+  border: 1px solid #a3071d;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
 
 /* Estilos para la paginación */
 .pagination {
@@ -84,6 +128,21 @@
   pointer-events: none;
 }
 
-.dark-mode .card{
+.dark-mode .card {
   background-color: transparent;
+}
+.dark-card-container{
+  box-shadow: 0  4px 8px rgba(249, 244, 244, 0.08) !important;
+}
+.dark-card-text{
+  color: #fff !important;
+}
+.dark-p{
+  color: #fff !important;
+}
+.dark-button-ver-mas{
+  background: #a3071d;
+}
+.dark-card-title{
+  color: #a3071d !important;
 }

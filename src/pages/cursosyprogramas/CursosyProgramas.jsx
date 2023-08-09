@@ -2,11 +2,11 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import "./CursosyProgramas.css";
 import { useDarkMode } from "../../DarkModeContext";
-import { programaTransversal } from "./Datos/programaTransversal";
-import { programaPerfil } from "./Datos/programaPerfil";
-import { programaEducar } from "./Datos/programaEducar";
-import { programaDojo } from "./Datos/programaDojo";
-import { programaOficio } from "./Datos/programaOficio";
+// import { programaTransversal } from "./Datos/programaTransversal";
+// import { programaPerfil } from "../Datos/programaPerfil";
+// import { programaEducar } from "./Datos/programaEducar";
+// import { programaDojo } from "./Datos/programaDojo";
+// import { programaOficio } from "./Datos/programaOficio";
 import imagenInfo from "../../img/profesores.webp";
 import Footer from "../../components/Footer/Footer";
 
@@ -94,7 +94,7 @@ const CursosyProgramas = () => {
               </p>
             </div> */}
 
-            <a class="btn btn-red mt-5" href="#" role="button">Empieza ya</a>
+            <a className="btn btn-red mt-5" href="#" role="button">Empieza ya</a>
 
           </div>
         </div>

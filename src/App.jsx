@@ -6,7 +6,7 @@ import CursosyProgramas from "./pages/cursosyprogramas/CursosyProgramas";
 import Contacto from "./pages/contacto/Contacto";
 import Academico from "./pages/academico/Academico";
 import NotFoundPage from "./pages/404/NotFoundPage";
-import Cursos from "./pages/cursos/Cursos";
+// import Cursos from "./pages/cursos/Cursos";
 import Programas from "./pages/programas/Programas";
 import { DarkModeProvider } from "./DarkModeContext"; // Import the DarkModeProvider
 import Menu from "./components/Navbar/Menu";
@@ -24,7 +24,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/todos-los-programas" element={<CursosyProgramas />} />
-            <Route path="/cursos" element={<Cursos />} />
+            {/* <Route path="/cursos" element={<Cursos />} /> */}
             <Route path="/programas" element={<Programas />} />
 
             {/* <Route path="/vermas/:subprogramaId" element={<Vermas />} /> */}
